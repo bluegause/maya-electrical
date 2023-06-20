@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+}
+
+.link-container .link {
+    height: 100%;
+   
+}
+
+.link-container .link .item {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.link-container .contact-button {
+    margin-right: 1em;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px 10px;
+    
+}
+
+.link-container .contact-button .item {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
