@@ -5,35 +5,46 @@
     align-items: center;
     background-color: black;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
     
 }
 
-.hamburger {
-    display: none;
+.navbar .hamburger {
+    color: white;
+    display: block;
+    margin-right: .9rem;
 }
 
 .link-container {
+    display: none;
+}
+
+.link-container.is-open {
+    background-color: rgba(36,84,204, 0.6);
     display: flex;
-    justify-content: center;
     align-items: center;
-    list-style: none;
-    gap: 2em;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    padding: 2em 0;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    gap: 3em;
+    
 }
 
-.link-container .link {
-    height: 100%;
-   
-}
 
-.link-container .link .item {
+.link-container li .item {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: 200;
     font-size: .9em;
 }
 
 .link-container .contact-button {
-    margin-right: 1em;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 2px;
@@ -41,14 +52,28 @@
     
 }
 
-.link-container .contact-button .item {
+.link-container .contact-button .contact-item {
     text-decoration: none;
     color: white;
     font-size: .9em;
+    font-weight: 300;
     
 }
 
 @media screen and (min-width: 768px) {
+    .navbar .hamburger {
+        display: none;
+    }
+    .link-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+    }
 
+    .link-container .contact-button {
+        margin-right: .9em;
+    }
 
 }
