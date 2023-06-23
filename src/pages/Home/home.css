@@ -1,0 +1,68 @@
+.home-hero {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+.home-hero .home-header {
+    width: 100%;
+    padding: 6em 0 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, .7);    
+}
+
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 0 1em 0;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    margin-top: 1em;
+}
+
+.home-text h1 {
+    color: white;
+    width: 95%;
+    font-size: 5.5em;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1em;
+    padding-bottom: 10px;
+}
+
+.home-text p {
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    width: 90%;
+    padding: .5em 0 .75em 0;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+.home-text .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.home-text .button-container .contact-link .contact-btn {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3em;
+    font-weight: 200;
+    padding: 10px 15px;
+    background-color: #2135CC;
+}
