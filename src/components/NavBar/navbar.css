@@ -6,7 +6,8 @@
     background-color: rgba(0, 0, 0, .6);
     padding: 10px 0;
     position: fixed;
-    z-index: 999;    
+    z-index: 999;
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .navbar .logo-container {
@@ -17,7 +18,8 @@
 
 .navbar .logo-container .logo-text {
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
+    padding: 0;
 }
 
 .navbar .hamburger {
@@ -31,7 +33,7 @@
 }
 
 .link-container.is-open {
-    background-color: rgba(36,84,204, 0.6);
+    background-color: rgba(36,84,204, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +68,8 @@
     text-decoration: none;
     color: white;
     font-weight: 200;
-    font-size: .9em;
+    font-size: 1.4em;
+    
 }
 
 .link-container .contact-button {
@@ -74,19 +77,29 @@
     border: 1px solid white;
     border-radius: 2px;
     padding: 5px 10px;
-    
 }
 
 .link-container .contact-button .contact-item {
     text-decoration: none;
     color: white;
-    font-size: .9em;
+    font-size: 1.4em;
     font-weight: 300;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
     
 }
 
 .navbar.scrolled {
   background-color: #161616;
+}
+
+@media screen and (max-width: 375.02px) {
+    .navbar .link-container li .item {
+        font-size: 1.3em;
+    }
+
+    .navbar .link-container .contact-button .contact-item {
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (min-width: 768px) {

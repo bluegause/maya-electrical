@@ -1,4 +1,8 @@
 body {
-    font-family: sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: #010203;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
