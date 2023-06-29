@@ -21,51 +21,53 @@ const Home = () => {
         <>
             <div className="home-hero" style={{backgroundImage: `url(${interior})`}}>
                 <div className="home-header">
-                    <div className="home-text">
-                        <h1>Elevate <br/>
-                            Your <br/>
-                            Lifestyle.
-                        </h1>
-                        <p>With Maya Electric's Smart Home Installations, You can Unlock the Full Potential of Your Home.</p>
-                        <div className="button-container">
-                            <NavLink to="/contact" className="contact-link"><button className="contact-btn color">Schedule Today</button></NavLink>
-                            <NavLink to="/services" className="contact-link"><button className="contact-btn">What We Offer</button></NavLink>
-                        </div>
+                    <h1>
+                        Elevate <br/>
+                        Your <br/>
+                        Lifestyle.
+                    </h1>
+                    <p>
+                        With Maya Electric's Smart Home Installations, <br/>
+                        You can Unlock the Full Potential of Your Home.
+                    </p>
+                    <div className="button-container">
+                        <NavLink to="/contact" className="contact-link"><button className="contact-btn color">Schedule Today</button></NavLink>
+                        <NavLink to="/services" className="contact-link"><button className="contact-btn">What We Offer</button></NavLink>
                     </div>
                 </div>
             </div>
-            <section className="home-one">
+            <section className="home-one__container">
                 <h3>Technology Meets <br/>
                     Efficiency.
                 </h3>
                 <hr/>
+                <div className="home-one__content">
+                    <div className="icon-container">
+                        <div className="icon">
+                            <Icon component={MoneyIcon} />
+                            <p>Save Money</p>
+                        </div>
+                        <div className="icon">
+                            <Icon component={LoginIcon} />
+                            <p>Remote Accessibility</p>
+                        </div>
+                        <div className="icon last">
+                            <Icon component={TuneIcon} />
+                            <p>Control & Customizablity</p>
+                        </div>
+                    </div>
 
-                <div className="icon-container">
-                    <div className="icon">
-                        <Icon component={MoneyIcon} />
-                        <p>Save Money</p>
-                    </div>
-                    <div className="icon">
-                        <Icon component={LoginIcon} />
-                        <p>Remote Accessibility</p>
-                    </div>
-                    <div className="icon last">
-                        <Icon component={TuneIcon} />
-                        <p>Control & Customizablity</p>
-                    </div>
-                </div>
-
-                <p className="home-one-p one">
-                    With the advancement of technology and hardware, you've never felt more in control.
-                </p>
-                <p className="home-one-p two">
-                    Smart home technology allows you to automate, control and monitor various aspects of your home,
-                    such as lighting, temperature, window shades and electricity consumption, all from a centralized system or remotely through your smartphone.
-                    Allowing you to manage your property in a more convenient and energy efficient way. 
+                    <p>
+                        With the advancement of technology and hardware, you've never felt more in control.
+                        Smart home technology allows you to automate, control and monitor various aspects of your home,
+                        such as lighting, temperature, window shades and electricity consumption, all from a centralized system or remotely through your smartphone.
+                        Allowing you to manage your property in a more convenient and energy efficient way. 
+                        
+                    </p>
                     
-                </p>
+                </div>
                 <Link to="/services" style={{textDecoration: "none"}}>
-                    <p className="home-one-button">Explore Options ></p>
+                    <p className="home-one-button">Explore Options > </p>
                 </Link>
             </section>
             <section className="home-two">

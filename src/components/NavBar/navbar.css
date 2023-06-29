@@ -1,5 +1,6 @@
 .navbar {
     display: flex;
+    
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -7,18 +8,19 @@
     padding: 10px 0;
     position: fixed;
     z-index: 999;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .navbar .logo-container {
     display: flex;
     align-items: center;
     justify-content: baseline;
+    margin-left: 2em;
 }
 
 .navbar .logo-container .logo-text {
     color: white;
-    font-size: 1.2em;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -67,24 +69,24 @@
 .link-container li .item {
     text-decoration: none;
     color: white;
-    font-weight: 200;
-    font-size: 1.4em;
+    font-weight: 300;
+    font-size: 16px;
     
 }
 
 .link-container .contact-button {
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 2px;
+    border-radius: 24px;
     padding: 5px 10px;
 }
 
 .link-container .contact-button .contact-item {
     text-decoration: none;
     color: white;
-    font-size: 1.4em;
+    font-size: 16px;
     font-weight: 300;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -115,7 +117,7 @@
     }
 
     .link-container .contact-button {
-        margin-right: .9em;
+        margin-right: 2em;
     }
 
 }
