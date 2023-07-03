@@ -1,26 +1,23 @@
-import React from "react";
-import interior from "../../assets/homeInterior.jpg"
+import React, { useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { interiorBackground, exteriorBackground, logoCity } from "../../assets/AssetsIndex";
 import { Link, NavLink } from "react-router-dom";
-import MoneyIcon from '@mui/icons-material/AttachMoney';
-import LoginIcon from '@mui/icons-material/Login';
-import TuneIcon from '@mui/icons-material/Tune';
-import home from '../../assets/home.jpg';
-import logo from '../../assets/mayalogo-trnsprnt.png';
-import { Icon } from "@mui/material";
-import LightIcon from '@mui/icons-material/LightOutlined';
-import PanelIcon from '@mui/icons-material/DynamicFormOutlined';
-import WirelessIcon from '@mui/icons-material/BroadcastOnHomeOutlined';
-import ToolsIcon from '@mui/icons-material/HandymanOutlined';
-import UpgradeIcon from '@mui/icons-material/UpgradeOutlined';
-import HouseIcon from '@mui/icons-material/CottageOutlined';
-
+import { Leaf, Icon, Light, Panel, Wireless, Tools, Upgrade, House, Money, Login, Tune } from "../PageIndex";
 import "./home.css";
 
+
+
 const Home = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: "1500"});
+    }, [])
+
     return (
         <>
-            <div className="home-hero" style={{backgroundImage: `url(${interior})`}}>
-                <div className="home-header">
+            <div className="home-hero" style={{backgroundImage: `url(${interiorBackground})`}}>
+                <div className="home-header" data-aos-duration="4000" data-aos = "fade-in">
                     <h1>
                         Elevate <br/>
                         Your <br/>
@@ -28,7 +25,8 @@ const Home = () => {
                     </h1>
                     <p>
                         With Maya Electric's Smart Home Installations, <br/>
-                        You can Unlock the Full Potential of Your Home.
+                        You can Unlock the Full Potential of Your Home <br/>
+                        Today.
                     </p>
                     <div className="button-container">
                         <NavLink to="/contact" className="contact-link"><button className="contact-btn color">Schedule Today</button></NavLink>
@@ -36,96 +34,114 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section className="home-one__container">
+
+
+            <section className="home-one__container" data-aos = "slide-up">
                 <h3>Technology Meets <br/>
-                    Efficiency.
+                    <i>Efficiency</i>.
                 </h3>
                 <hr/>
                 <div className="home-one__content">
                     <div className="icon-container">
-                        <div className="icon">
-                            <Icon component={MoneyIcon} />
-                            <p>Save Money</p>
+                        <div className="icon"  data-aos = "slide-right">
+                            <p className="icon-typography">Save Money</p>
+                            <Icon component={Money} sx={{fontSize: '28px', marginRight: '10px'}}/>
                         </div>
-                        <div className="icon">
-                            <Icon component={LoginIcon} />
-                            <p>Remote Accessibility</p>
+
+                        <div className="icon" data-aos = "slide-right" data-aos-duration="2005">
+                            <p className="icon-typography">Energy Efficient</p>
+                            <Icon component={Leaf} sx={{fontSize: '28px', marginRight: '10px'}}/>
+
                         </div>
-                        <div className="icon last">
-                            <Icon component={TuneIcon} />
-                            <p>Control & Customizablity</p>
+
+                        <div className="icon" data-aos = "slide-right"data-aos-duration="2010">
+                            <p className="icon-typography">Remote Accessibility</p>
+                            <Icon component={Login} sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            
+                        </div>
+
+                        <div className="icon last" data-aos = "slide-right" data-aos-duration="2015">
+                            <p className="icon-typography">Control & Customizablity</p>
+                                <Icon component={Tune} sx={{fontSize: '28px', marginRight: '10px'}}/>
                         </div>
                     </div>
-
-                    <p>
-                        With the advancement of technology and hardware, you've never felt more in control.
-                        Smart home technology allows you to automate, control and monitor various aspects of your home,
-                        such as lighting, temperature, window shades and electricity consumption, all from a centralized system or remotely through your smartphone.
-                        Allowing you to manage your property in a more convenient and energy efficient way. 
+                    <div className="home-one__info" data-aos = "slide-left">
+                        <p className="home-1__heading">
+                            Why Upgrade?
+                        </p>
+                        <p className="home1-text">
+                            Smart home technology allows you to automate, control and monitor various aspects of your home,
+                            such as lighting, temperature, window shades and electricity consumption, all from a centralized system or remotely through your smartphone.
+                            Allowing you to manage your property in a more convenient and energy efficient way. 
+                        </p>
                         
-                    </p>
-                    
+                    </div>
                 </div>
-                <Link to="/services" style={{textDecoration: "none"}}>
-                    <p className="home-one-button">Explore Options > </p>
-                </Link>
+                <div className="services-button" data-aos = "fade-in">
+                    <Link to="/services" className="services-routing" style={{textDecoration: "none"}}>
+                        <button className="home-one-button">Explore Options</button>
+                    </Link>
+                </div>
             </section>
-            <section className="home-two">
-                <div className="home2-background" style={{backgroundImage: `url(${home})`}}>
+
+
+            <section className="home2-bg" alt='exterior of house background' style={{backgroundImage: `url(${exteriorBackground})`}}>
+                <div className="home-two">
+                    <h4 className="home2-header">
+                        Upgrade Today with <br/>
+                        Maya Electric
+                    </h4>
+                    <hr  style={{background: "white"}}/>
                     <div className="home2-container">
-
-                        <h4 className="home2-header">
-                            Upgrade Today with <br/>
-                            Maya Electric
-                        </h4>
-
+                        
+                        <p className="icons-p">
+                            We provide smart home installations for new & existing residences throughout San Diego, California.
+                            From smart lighting and system upgrades, to new home construction plans, Maya Electric is here to light the way.
+                        </p>
+        
                         <div className="body-icons-container">
                             <section className="icons-section">
+                    
                                 <div className="body-icon">
-                                    <LightIcon className="body-item" sx={{fontSize: "35px"}} />
+                                    <Light className="body-item" sx={{fontSize: "30px"}} />
                                     <p className="icon-text">Smart Lighting</p>
                                 </div>
+
                                 <div className="body-icon">
-                                    <PanelIcon className="body-item"  sx={{fontSize: "35px"}} />
+                                    <Panel className="body-item"  sx={{fontSize: "30px"}} />
                                     <p className="icon-text">Panelized Systems</p>
-                                    
                                 </div>
+
                                 <div className="body-icon">
-                                    <WirelessIcon className="body-item"  sx={{fontSize: "35px"}} />
+                                    <Wireless className="body-item"  sx={{fontSize: "30px"}} />
                                     <p className="icon-text">Wireless Systems</p>
-                                    
                                 </div>
                             </section>
                             <section className="icons-section">
                                 <div className="body-icon">
-                                    <ToolsIcon className="body-item"  sx={{fontSize: "35px"}} />
+                                    <Tools className="body-item"  sx={{fontSize: "30px"}} />
                                     <p className="icon-text">New Construction</p>
                                     
                                 </div>
                                 <div className="body-icon">
-                                    <UpgradeIcon className="body-item"  sx={{fontSize: "35px"}} />
+                                    <Upgrade className="body-item"  sx={{fontSize: "30px"}} />
                                     <p className="icon-text">System Upgrades</p>
                                     
                                 </div>
                                 <div className="body-icon">
-                                    <HouseIcon className="body-item"  sx={{fontSize: "35px"}} />
+                                    <House className="body-item"  sx={{fontSize: "30px"}} />
                                     <p className="icon-text">Remodels</p>
                                     
                                 </div>    
                             </section>                      
                         </div>
-                        <div className="home2-bottom">
-                            <p className="icons-p">
-                                We provide smart home installations for exisiting and new residences throughout San Diego, California.
-                                From smart lighting and system upgrades, to new home construction plans, Maya Electric is here to light the way.
-                            </p>
-                            <Link to="/contact">
-                                <button className="contact-us">
-                                    Contact Us Today
-                                </button>
-                            </Link>
-                        </div>
-                        
+                    </div>
+                    <div className="home2-contact-button">
+                        <Link to="/contact" className="contact-link">
+                            <button className="home2-contact-us">
+                                Contact Us Today
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
