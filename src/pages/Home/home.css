@@ -93,7 +93,7 @@
     }
 
     hr {
-            width: 95%;
+            width: 50%;
             background-color: #FFFFFF;
             background: linear-gradient(to right, #FFFFFF, #009FFD, #2A2A72);
             height: 2px;
@@ -178,15 +178,19 @@
 
     .home-one-button {
         color: white;
-        background: #2153CC;
+        background: transparent;
+        border: 1px solid #FFFFFF;
         padding: 12px 25px;
         font-size: 1.2em;
         border-radius: 25px;
-        border: none;
+        font-weight: 500;
         font-family: 'Poppins', sans-serif; 
         margin: 1em 0 2em 0;
         width: 35%;
-        
+    }
+
+    .home-one-button:hover {
+        background-color: #2153CC;
     }
 
 /* Second Home Section */
@@ -201,107 +205,165 @@
     .home-two {
         background-color: rgba(0, 0, 0, .7);
         width: 100%;
-        padding: 2em 0;
+        padding: 1em 0 2em 0;
     }
 
-        .home2-header {
-            font-size: 3em;
-            max-width: 100%;
-            line-height: 1.2em;
+    .home2-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+        margin: 2em 0 1em 0;
+    }
+
+        .home2-head {
+            font-size: 2.1em;
+            width: 100%;
             font-weight: 500;
             color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
             margin: 0 auto;
-            padding-bottom: .5rem;
-            /* background: linear-gradient(to right, #FFFFFF,#009FFD, #2153CC);
+            padding: .5em 0;
+        }
+
+        .bold-text {
+            text-align: center;
+            font-size: 3em;
+            font-weight: 600;
+            color: white;
+            letter-spacing: .3em;
+            background: linear-gradient(to right, #FFFFFF, #009FFD);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
-                background-clip: text; */
+                background-clip: text;
         }
 
-        .home2-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-auto-columns: auto;
-            align-content: center;
-            flex-direction: row;
-            max-width: 100%;
-            margin: 1.5em 2em 2em 2em;
+        .home2-subheading {
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.2em;
+            line-height: 35px;
+            width: 90%;
+            padding: 1em 0 .1em 0;
+            margin: 0 auto;
         }
 
-            .icons-p {
-                color: white;
-                font-weight: 400;
-                font-size: 1.1em;
-                line-height: 35px;
-                width: 100%;
-                text-align: left;
-                padding-right: .5em;
-                margin: auto;
-            }
-
-
-    .body-icons-container {
-        font-family: 'Poppins', sans-serif;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+    .carousel-container {
+        max-width: 95%;
         margin: 0 auto;
-        margin-left: .5em;
-        background: linear-gradient( to bottom, rgba(33, 83, 204, 0.7), rgba(0, 0, 0, 0.7));
-        border-radius: 10px;
-        max-width: 100%;
-        padding: .25em .5em;
+        position: relative;
     }
 
-        .icons-section {
-            margin: 0 auto;
-            padding: .25em .5em;
-        }
+    .carousel-cards {
+        width: 100%;
+        padding-bottom: 2em;
+    
+        
+    }
 
-            .body-icon {
-                max-width: 100%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                margin: .5em 0;
-            }
 
-                .body-item {
-            
-                    padding: 8px;
-                    border-radius: 20%;
-                    background-color: #009FFD;
-                }
+    .react-multiple-carousel__arrow {
+        background: rgba(0, 0, 0, .3);
+        margin: 0 -1.2em;
+    }
 
-                .icon-text {
-                    width: 100%;
-                    font-weight: 300;
-                    font-size: 1em;
-                    text-align: left;
-                    margin-left: 10px;
-                    font-family: 'Poppins', sans-serif;
-                }
-    .home2-contact-button {
+    .react-multiple-carousel__arrow--left::before, .react-multiple-carousel__arrow--right::before {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+
+    .card {
+        height: 90%;
+        background: rgba(33, 83, 204, .7);
+        border: 2px solid #FFFFFF;
+        color: white;
+        margin: 30px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .card .card-icon {
+        margin: 1.5em 0 2em 0;
+        background: transparent;
+        border: 3px solid white;
+        border-radius: 100%;
+        padding: 10px 12px;
+    }
+
+    .description-container .card-heading {
+        font-size: 1.8em;
+        margin: .5em auto;
+        border-bottom: 2px solid white;
+        font-weight: 500;
+        width: 90%;
+        padding-bottom: 10px;
+        
+    }
+
+    .card .description-container .description {
+        line-height: 1.8em;
+        font-size: 1.1em;
+        color: white;
+        width: 95%;
+        margin: 0 auto;
+        
+    }
+
+    .home2-learn-button {
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
     
-    .home2-contact-us {
+    .home2-learn-more {
         color: white;
+        width: 35%;
         background: transparent;
-        border: 2px solid white;
-        padding: 12px 10px;
-        font-size: 1em;
-        font-weight: 300;
+        border: 1px solid #FFFFFF;
+        padding: 10px 30px;
+        font-size: 1.2em;
+        font-weight: 500;
         border-radius: 25px;
         font-family: 'Poppins', sans-serif; 
-        margin: 0 2em;
+        margin: 1em 0 2em 0;
     }
+
+    .home2-learn-more:hover {
+        background: #2153CC; 
+    }
+
+/* HOME SECTION 3 */
+
+.home3-section {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media query for smaller iphones  */

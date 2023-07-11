@@ -1,14 +1,27 @@
 import React, { useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { interiorBackground, exteriorBackground, logoCity } from "../../assets/AssetsIndex";
-import { Link, NavLink } from "react-router-dom";
-import { Leaf, Icon, Light, Panel, Wireless, Tools, Upgrade, House, Money, Login, Tune } from "../PageIndex";
+import { interiorBackground, exteriorBackground } from "../../assets/AssetsIndex";
+import { Money, Leaf, Login, Tune } from "../PageIndex";
+import Card from '../../components/Card/Card';
+import { responsive, serviceData } from "../../data";
+import Carousel from "react-multi-carousel";
+
+import 'react-multi-carousel/lib/styles.css';
 import "./home.css";
 
 
 
 const Home = () => {
+    const service = serviceData.map((item, index) => (
+        <Card
+            key={index}
+            icon={item.icon}
+            name={item.name}
+            description={item.description}
+        />
+    ))
 
     useEffect(() => {
         Aos.init({ duration: "1500"});
@@ -45,24 +58,24 @@ const Home = () => {
                     <div className="icon-container">
                         <div className="icon"  data-aos = "slide-right">
                             <p className="icon-typography">Save Money</p>
-                            <Icon component={Money} sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            <Money sx={{fontSize: '28px', marginRight: '10px'}}/>
                         </div>
 
                         <div className="icon" data-aos = "slide-right" data-aos-duration="2005">
                             <p className="icon-typography">Energy Efficient</p>
-                            <Icon component={Leaf} sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            <Leaf sx={{fontSize: '28px', marginRight: '10px'}}/>
 
                         </div>
 
                         <div className="icon" data-aos = "slide-right"data-aos-duration="2010">
                             <p className="icon-typography">Remote Accessibility</p>
-                            <Icon component={Login} sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            <Login sx={{fontSize: '28px', marginRight: '10px'}}/>
                             
                         </div>
 
                         <div className="icon last" data-aos = "slide-right" data-aos-duration="2015">
                             <p className="icon-typography">Control & Customizablity</p>
-                                <Icon component={Tune} sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            <Tune sx={{fontSize: '28px', marginRight: '10px'}}/>
                         </div>
                     </div>
                     <div className="home-one__info" data-aos = "slide-left">
@@ -87,61 +100,59 @@ const Home = () => {
 
             <section className="home2-bg" alt='exterior of house background' style={{backgroundImage: `url(${exteriorBackground})`}}>
                 <div className="home-two">
-                    <h4 className="home2-header">
-                        Upgrade Today with <br/>
-                        Maya Electric
+
+                    <div className="home2-header" data-aos = 'fade-in'>
+                    <h4 className="home2-head">
+                        Upgrade Today with
                     </h4>
-                    <hr  style={{background: "white"}}/>
-                    <div className="home2-container">
-                        
-                        <p className="icons-p">
-                            We provide smart home installations for new & existing residences throughout San Diego, California.
-                            From smart lighting and system upgrades, to new home construction plans, Maya Electric is here to light the way.
-                        </p>
-        
-                        <div className="body-icons-container">
-                            <section className="icons-section">
-                    
-                                <div className="body-icon">
-                                    <Light className="body-item" sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">Smart Lighting</p>
-                                </div>
-
-                                <div className="body-icon">
-                                    <Panel className="body-item"  sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">Panelized Systems</p>
-                                </div>
-
-                                <div className="body-icon">
-                                    <Wireless className="body-item"  sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">Wireless Systems</p>
-                                </div>
-                            </section>
-                            <section className="icons-section">
-                                <div className="body-icon">
-                                    <Tools className="body-item"  sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">New Construction</p>
-                                    
-                                </div>
-                                <div className="body-icon">
-                                    <Upgrade className="body-item"  sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">System Upgrades</p>
-                                    
-                                </div>
-                                <div className="body-icon">
-                                    <House className="body-item"  sx={{fontSize: "30px"}} />
-                                    <p className="icon-text">Remodels</p>
-                                    
-                                </div>    
-                            </section>                      
-                        </div>
+                    <p className="bold-text">
+                        MAYA ELECTRIC
+                    </p>
                     </div>
-                    <div className="home2-contact-button">
-                        <Link to="/contact" className="contact-link">
-                            <button className="home2-contact-us">
-                                Contact Us Today
+                    
+
+                    <hr style={{ width: "50%", background: "linear-gradient(to right, #FFFFFF, #009FFD, #2A2A72)" }} data-aos = "fade-in" />
+
+                    <p className="home2-subheading" data-aos = "fade-in">
+                        We provide smart home installations for new & existing residences throughout San Diego, California.
+                        From smart lighting and system upgrades, to new home construction plans, Maya Electric is here to light the way.
+                    </p>
+                    
+
+                    <div className="carousel-container" data-aos = 'slide-right'>
+                        <Carousel
+                            containerClass="carousel-cards"
+                            infinite={true}
+                            swipeable={true}
+                            draggable={true}
+                            autoPlay={false}
+                            showDots={true}
+                            renderDotsOutside={false}
+                            arrows={true}
+                            responsive={responsive}>
+
+                                {service}
+
+                        </Carousel>      
+                    </div>               
+
+                    <div className="home2-learn-button" data-aos = 'slide-up'>
+                        <Link to="/contact" className="learn-more-link">
+                            <button className="home2-learn-more">
+                                Learn More
                             </button>
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className="home3-section">
+                <div className="home3-container">
+                    <div className="home3-header__container">
+
+                    </div>
+                    <div className="home3-content__container">
+
                     </div>
                 </div>
             </section>

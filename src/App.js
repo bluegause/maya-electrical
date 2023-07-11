@@ -7,7 +7,6 @@ import Contact from "./pages/Contact/Contact";
 
 import "./App.css";
 
-
 function App() {
   return (
     <div className="App">
@@ -19,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       
+       
     </div>
   );
 }
