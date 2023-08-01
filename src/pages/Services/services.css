@@ -1,6 +1,6 @@
 .services-container {
     width: 100%;
-    background-color: #DEDEDE;
+    background-color: #414141;
 }
 /* Background Image */
     .services-header__bg {
@@ -67,17 +67,18 @@
         .services1-header {
             font-size: 2em;
             font-weight: 500;
-            color: #414141;
+            color: #FFFFFF;
             text-align: center;
             margin: 1em 0 .5em 0;
         }
 
         .services1-typography {
-            color: #414141;
+            color: #FFFFFF;
             text-align: center;
-            width: 95%; 
+            width: 90%; 
             margin: 0 auto;
-            line-height: 1.4em;
+            line-height: 1.5em;
+            font-size: 1.1em;
         }
 
 /* Two Installation Type Sections */
@@ -88,22 +89,23 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            margin: 1em 0;
-            color: #414141;
+            margin-top: 1.5em;
+            color: #FFFFFF;
         }
 /* Basic Install Section */
         .basic-package__section {
             width: 100%;
-            color: #414141;
+            color: #FFFFFF;
+            background-color: #2153CC;
         }
 
             .basic-package__header {
                 width: 95%;
                 margin: 0 auto;
-                font-size: 1.5em;
+                font-size: 1.7em;
                 text-align: center;
-                padding: .5em 0;
-                color: #414141;
+                padding: 1em 0;
+                color: #FFFFFF;
             }
 
             .basic-body {
@@ -113,7 +115,7 @@
             }
 
                 .basic-typography {
-                    width: 95%;
+                    width: 90%;
                     margin: 0 auto;
                     font-weight: 300;
                     line-height: 1.6em;
@@ -122,26 +124,9 @@
                 
                 .basic-reasons__container {
                     width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: center;
                     margin-top: 1em;
+                    padding: 1em 0;
                 }
-
-                .basic-reasons__container > section {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                    .basic-card1, .basic-card2, .basic-card3, .basic-card4 {
-                        width: 23%;
-                        margin: 0 auto;
-                    }
-                    
 
                         .basic-card__header {
                             width: 90%;
@@ -158,36 +143,128 @@
                             margin: .5em auto;
                         }
 
-                    
-
-
-
 /* The Works Section */
 
         .the-works__section {
-            width: 95%;
-            border: 1px solid white;
-            color: #414141;
+            width: 100%;
+            margin-top: 1em;
+            color: #FFFFFF;
         }
 
             .the-works__header {
                 width: 95%;
                 margin: 0 auto;
-                font-size: 1.5em;
+                font-size: 1.7em;
                 text-align: center;
-                padding: .5em 0;
+                padding: .5em 0 1em 0;
             }
 
             .works-body {
-                width: 95%;
+                width: 100%;
+                text-align: center;
                 margin: 0 auto;
-                background-color: rgba(255, 255, 255, .5);
             }
 
                 .works-typography {
-                    width: 95%;
+                    width: 90%;
                     margin: 0 auto;
-                    line-height: 1.2em;
-                    font-size: 1em;
                     font-weight: 300;
+                    line-height: 1.6em;
+                    font-size: 1em;
+                }
+
+                .works-reasons__section {
+                    width: 100%;
+                    margin-top: 1em;
+                    padding: 1em 0;
+                }
+
+                    .works-card__header {
+                        width: 90%;
+                        margin: .5em auto;
+                        font-weight: 400;
+                        font-size: 1.1em;
+                    }
+
+                    .works-card__description {
+                        width: 90%;
+                        font-size: .9em;
+                        font-weight: 300;
+                        line-height: 1.6em;
+                        margin: .5em auto;
+                    }
+/* End Section */
+    .services-end {
+        width: 100%;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #DEDEDE;
+    }
+
+    .services-end__tint {
+        background-color: rgba(0, 0, 0, .5);
+        padding: 2em 0;
+        color: #FFFFFF;
+    }
+
+        .services-end__header {
+            font-size: 2em;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .services-end__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1em 0;
+        }
+
+            .services-end__body {
+                width: 45%;
+                line-height: 1.7em;
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            .services-end__buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                width: 45%;
+            }
+
+                .service-button__link {
+                    width: 90%;
+                }
+
+                .service-button__wrapped {
+                    width: 100%;
+                    margin: .5em 0;
+                    background-color: #2153CC;
+                    border: none;
+                    border-radius: 25px;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    font-size: 1.2em;
+                }
+
+                .service-button {
+                    width: 90%;
+                    margin: .5em 0;
+                    background-color: #2153CC;
+                    border: none;
+                    border-radius: 25px;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    font-size: 1.2em;
+                    transition: all .35s;
+                }
+
+                .service-button__wrapped:hover, .service-button:hover {
+                    background-color: #406FE0;
+                    transition: all .35s;
                 }
