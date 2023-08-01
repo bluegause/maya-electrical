@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { interiorBackground, exteriorBackground, Transparentlogo, SDhouses } from "../../assets/AssetsIndex";
-import { Money, Leaf, Login, Tune, Light, Panel, Wireless, Tools, Upgrade, House, Instagram, Facebook, Phone, Email, Question } from "../PageIndex";
+import { Money, Leaf, Login, Tune, Light, Panel, Wireless, Tools, Upgrade, House } from "../PageIndex";
 import Card from '../../components/Card/Card';
 import { responsive, serviceData } from "../../data";
 import Carousel from "react-multi-carousel";
