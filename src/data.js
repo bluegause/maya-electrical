@@ -48,7 +48,7 @@ export const responsive = {
         id: 5,
         icon: <Upgrade sx={{fontSize: "50px"}}/>,
         name: "System Upgrades",
-        description: "In need of a smart home update? Maya Electric is no stranger when it comes to smart home tech new and exisiting. We offer services to existing smart home owners, including programming changes, adding new devices, and even getting your firmwire up to date.",
+        description: "Maya Electric is no stranger when it comes to smart home tech new & exisiting. We offer services to existing smart home owners, including programming changes, adding new devices, and even getting your firmwire up to date.",
     },
     {
         id: 6,

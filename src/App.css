@@ -1,6 +1,10 @@
+body, html {
+    width: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #414141, black);
+    background-color: #0E1111;
     margin: 0 auto;
 }
 

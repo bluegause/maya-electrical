@@ -1,0 +1,89 @@
+.faqs-page {
+    width: 100%;
+}    
+    
+    .faqs-container {
+        width: 100%;
+        padding: 8em 0 6em 0;
+        vertical-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+        .faqs-info__wrapper {
+            width: 48%;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .faqs-header {
+                font-size: 2.5em;
+                margin: .5em 0;
+                text-align: center;
+            }
+
+            .faqs-subheading {
+                width: 95%;
+                font-size: 1.1em;
+                line-height: 1.5em;
+                text-align: center;
+            }
+
+            .faqs-contact__container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin: 1em 0;
+            }
+
+                .faqs-phone__button, .faqs-email__button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #FFFFFF;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    border-radius: 25px;
+                    width: 50%;
+                    overflow: hidden;
+                    background: transparent;
+                    position: relative;
+                    transition: all ease .35s;
+                    z-index: 1;
+                }
+
+                .faqs-phone__button {
+                    margin-bottom: 1em;
+                }
+
+                .faqs-phone__button:after, .faqs-email__button:after {
+                    content: "";
+                    background: #2153CC;
+                    position: absolute;
+                    z-index: -1;
+                    display: block;
+                    transition: all .35s;
+                }
+
+                .faqs-phone__button:hover::after, .faqs-email__button:hover::after  {
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    transition: all .35s;
+                } 
+
+                .faqs-phone__button::after, .faqs-email__button::after {
+                    left: -100%;
+                    right: 100%;
+                    top: 0;
+                    bottom: 0;
+                }

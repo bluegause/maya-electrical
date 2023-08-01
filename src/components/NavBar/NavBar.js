@@ -40,27 +40,48 @@ const NavBar = () => {
         </div>
         <ul className={`link-container ${isMenuOpen ? 'is-open fade-in-right' : ''}`}>
           <li>
-            <NavLink to="/" className="item">
+            <NavLink 
+              to="/" 
+              className="nav-item" 
+              style={({ isActive }) => ({
+                color: isActive ? '#2153CC' : '#FFFFFF',
+                fontSize: isActive ? '1.2em' : '1em'
+              })}
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services" className="item">
+            <NavLink to="/services" className="nav-item" style={({ isActive }) => ({
+                color: isActive ? '#2153CC' : '#FFFFFF',
+                fontSize: isActive ? '1.2em' : '1em'
+              })}>
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="item">
+            <NavLink to="/about" className="nav-item" style={({ isActive }) => ({
+                color: isActive ? '#2153CC' : '#FFFFFF',
+                fontSize: isActive ? '1.2em' : '1em'
+              })}>
               About Us
             </NavLink>
           </li>
           <li>
-            <button className="contact-button">
-              <NavLink to="/contact" className="contact-item">
-                Contact Us
-              </NavLink>
-            </button>
+            <NavLink to="/faqs" className="nav-item" style={({ isActive }) => ({
+                color: isActive ? '#2153CC' : '#FFFFFF',
+                fontSize: isActive ? '1.2em' : '1em'
+              })}>
+              FAQS
+            </NavLink>
           </li>
+
+          <NavLink to="/contact" className="contact-nav__item">
+            <button className='contact-nav'>
+              Contact Us
+            </button>
+          </NavLink>
+
         </ul>
       </nav>
     </>

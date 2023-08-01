@@ -10,6 +10,11 @@ import House from '@mui/icons-material/CottageOutlined';
 import Money from '@mui/icons-material/AttachMoney';
 import Login from '@mui/icons-material/Login';
 import Tune from '@mui/icons-material/Tune';
+import Instagram from '@mui/icons-material/Instagram';
+import Facebook from '@mui/icons-material/Facebook';
+import Phone from '@mui/icons-material/LocalPhone';
+import Email from '@mui/icons-material/Email';
+import Question from '@mui/icons-material/LiveHelp';
 
 export {
     Leaf,
@@ -22,6 +27,11 @@ export {
     House,
     Money,
     Login,
-    Tune
+    Tune,
+    Instagram,
+    Facebook, 
+    Phone,
+    Email,
+    Question
 }
 

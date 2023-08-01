@@ -1,4 +1,193 @@
 .services-container {
-    height: 100vh;
     width: 100%;
+    background-color: #DEDEDE;
 }
+/* Background Image */
+    .services-header__bg {
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+/* Header */
+
+    .services-header__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .4);
+        padding-bottom: 1em;
+    }
+
+        .services-header {
+            font-size: 5em;
+            font-weight: 500;
+            color: #FFFFFF;
+            padding-top: 2em;
+            width: 95%;
+            margin: .5em auto;
+            text-align: center;
+
+        }
+
+        .services-subheading {
+            color: #FFFFFF;
+            font-size: 1.2em;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 1.4em;
+        }
+
+        .services-contact__link {
+            width: 100%;
+            text-align: center;
+        }
+
+        .services-contact__button {
+            width: 30%;
+            padding: 10px 20px;
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+            margin: 1em auto;
+            background-color: rgba( 33, 83, 204, .7);
+            color: white;
+            font-size: 1.4em;
+        }
+
+/* First Section */
+    .services1-section {
+        width: 100%;
+    }
+
+        .services1-header {
+            font-size: 2em;
+            font-weight: 500;
+            color: #414141;
+            text-align: center;
+            margin: 1em 0 .5em 0;
+        }
+
+        .services1-typography {
+            color: #414141;
+            text-align: center;
+            width: 95%; 
+            margin: 0 auto;
+            line-height: 1.4em;
+        }
+
+/* Two Installation Type Sections */
+
+        .services1-options__container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin: 1em 0;
+            color: #414141;
+        }
+/* Basic Install Section */
+        .basic-package__section {
+            width: 100%;
+            color: #414141;
+        }
+
+            .basic-package__header {
+                width: 95%;
+                margin: 0 auto;
+                font-size: 1.5em;
+                text-align: center;
+                padding: .5em 0;
+                color: #414141;
+            }
+
+            .basic-body {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+                .basic-typography {
+                    width: 95%;
+                    margin: 0 auto;
+                    font-weight: 300;
+                    line-height: 1.6em;
+                    font-size: 1em;
+                }
+                
+                .basic-reasons__container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 1em;
+                }
+
+                .basic-reasons__container > section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .basic-card1, .basic-card2, .basic-card3, .basic-card4 {
+                        width: 23%;
+                        margin: 0 auto;
+                    }
+                    
+
+                        .basic-card__header {
+                            width: 90%;
+                            margin: .5em auto;
+                            font-weight: 400;
+                            font-size: 1.1em;
+                        }
+
+                        .basic-card__description {
+                            width: 90%;
+                            font-size: .9em;
+                            font-weight: 300;
+                            line-height: 1.6em;
+                            margin: .5em auto;
+                        }
+
+                    
+
+
+
+/* The Works Section */
+
+        .the-works__section {
+            width: 95%;
+            border: 1px solid white;
+            color: #414141;
+        }
+
+            .the-works__header {
+                width: 95%;
+                margin: 0 auto;
+                font-size: 1.5em;
+                text-align: center;
+                padding: .5em 0;
+            }
+
+            .works-body {
+                width: 95%;
+                margin: 0 auto;
+                background-color: rgba(255, 255, 255, .5);
+            }
+
+                .works-typography {
+                    width: 95%;
+                    margin: 0 auto;
+                    line-height: 1.2em;
+                    font-size: 1em;
+                    font-weight: 300;
+                }
