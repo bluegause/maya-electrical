@@ -16,6 +16,11 @@ import "./home.css";
 
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scroll(0,0)
+    }, []);
+
     const service = serviceData.map((item, index) => (
         <Card
             key={index}
@@ -67,6 +72,10 @@ const Home = () => {
                 </h3>
                 
                 <div className="home1-content">
+                    <h4 className="home1-subheading__small" data-aos="slide-right">
+                        Why Should You Upgrade
+                        Your Property?
+                    </h4>
                     <div className="home1-icon__wrapper" data-aos = "slide-right">
                         <div className="home1-icon">
                             <p className="home1-icon__caption">Save Money</p>
@@ -91,10 +100,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home1-typography" data-aos = "slide-left">
-                        <p className="home1-subheading">
+                        <h4 className="home1-subheading">
                             Why Should You Upgrade <br/>
                             Your Property?
-                        </p>
+                        </h4>
                         <p className="home1-text">
                             Smart home technology allows you to automate, control and monitor various aspects of your home,
                             such as lighting, temperature, window shades and electricity consumption, through a centralized system or remotely through an app.
@@ -127,7 +136,7 @@ const Home = () => {
                         From smart lighting and system upgrades, to new home construction plans,
                         Maya Electric is here to light the way, one smart home at a time.
                     </p>
-                    <div className="home2-carousel__container" data-aos = 'slide-right' data-aos-duration = '1700'>
+                    <div className="home2-carousel__container" data-aos = 'slide-right' data-aos-duration = '10000'>
                         <Carousel
                             containerClass="home2-carousel__cards"
                             infinite={true}
@@ -148,7 +157,7 @@ const Home = () => {
                 <h3 className="home3-header">
                     Why Choose Maya Electric?
                 </h3>
-                <div className="home3-container" data-aos = 'fade-up'>
+                <div className="home3-container" data-aos = 'fade-up' data-aos-duration="10000">
                     <div className="home3-card__wrapper">
                         
                         <div className="home3-card">
@@ -205,7 +214,7 @@ const Home = () => {
             </section>
 
             <section className="end-section" style={{backgroundImage: `url(${SDhouses})`}}>
-                <div className="end-container" data-aos = 'fade-in'>
+                <div className="end-container" data-aos = 'fade-in' data-aos-duration="10000">
                     <div className="end-head__wrapper">
                         <img className="end-logo" alt='Maya Electric Logo' src={Transparentlogo} /> 
                         <h3 className="end-header">

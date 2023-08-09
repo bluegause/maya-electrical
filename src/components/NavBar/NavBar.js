@@ -45,7 +45,8 @@ const NavBar = () => {
               className="nav-item" 
               style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
-                fontSize: isActive ? '1.2em' : '1em'
+                fontSize: isActive ? '1.2em' : '1em',
+                outline: 'none'
               })}
             >
               Home
@@ -54,7 +55,8 @@ const NavBar = () => {
           <li>
             <NavLink to="/services" className="nav-item" style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
-                fontSize: isActive ? '1.2em' : '1em'
+                fontSize: isActive ? '1.2em' : '1em',
+                outline: 'none'
               })}>
               Services
             </NavLink>
@@ -62,7 +64,8 @@ const NavBar = () => {
           <li>
             <NavLink to="/about" className="nav-item" style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
-                fontSize: isActive ? '1.2em' : '1em'
+                fontSize: isActive ? '1.2em' : '1em',
+                outline: 'none'
               })}>
               About Us
             </NavLink>
@@ -70,7 +73,8 @@ const NavBar = () => {
           <li>
             <NavLink to="/faqs" className="nav-item" style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
-                fontSize: isActive ? '1.2em' : '1em'
+                fontSize: isActive ? '1.2em' : '1em',
+                outline: 'none'
               })}>
               FAQS
             </NavLink>

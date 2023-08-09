@@ -64,7 +64,10 @@
     }
 }
 
-
+.link-container li {
+    text-decoration: none;
+    outline: none;
+}
 
 .link-container li .nav-item {
     text-decoration: none;

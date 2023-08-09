@@ -11,7 +11,7 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     color: #D3D3D3;
-    padding: 1em 0;
+    padding: 3em 0 2em 0;
 }
 
 /* Left Section */
@@ -161,3 +161,18 @@ footer {
         color: rgba(211, 211, 211, .7);
         padding-bottom: .5em;
     }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+
+    footer {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .footer-left {
+        display: none;
+    }
+}
