@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import FaqsComponent from '../../components/FaqsComponent/FaqsComponent';
+import FaqsComponent2 from '../../components/FaqsComponent/faqsComponent2';
 import { Link } from 'react-router-dom';
-import { Question } from '../PageIndex';
+import { heroBg } from '../../assets/AssetsIndex';
 
 import './faqs.css';
-import { faqsBg } from '../../assets/AssetsIndex';
 
 const Faqs = () => {
 
@@ -14,7 +14,7 @@ const Faqs = () => {
 
     return (
         <div className='faqs-page'>
-            <section className='faqs-head' style={{backgroundImage: `url(${faqsBg})`}}>
+            <section className='faqs-head' style={{backgroundImage: `url(${heroBg})`}}>
                 <div className='head-tint'>
                     <h1 className='faqs-main__header'>
                         Got Questions? <br/>
@@ -25,21 +25,20 @@ const Faqs = () => {
                         When it comes to smart home lighting installations, there can be many unanswered questions that you may have from the start. Feel free to check out the following below, and if you still have other questions, don't hesistate to give us a call or send a message and our experts will answer every question to the best of our abilities to give you the confidence you need. 
                     </p>
                 </div>
-            </section>
+            
             <div className="faqs-container">
-                <div className="faqs-info__wrapper">
-                    <div className="faqs-icons__wrapper">
-                        <Question style={{fontSize: '100px'}} />
-                        <Question style={{fontSize: '100px', color: '#2153CC'}} />
-                        <Question style={{fontSize: '100px'}} />
-                    </div>
-                    
+                <div className="faqs-info__wrapper">                    
                     <h3 className="faqs-header">
                         Frequently Asked Questions
                     </h3>
+                    <div className='faqs-component__container'>
+                        <FaqsComponent />
+                        <FaqsComponent2 />
+                    </div>
+                </div>
                     <p className="faqs-subheading">
                         If you are still unsure, or have any concerns/questions that you'd like to ask or get insight on, don't hesitate to contact us, or refer to the FAQs here.
-                        <br/>
+                        
                         Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.    
                     </p>
                     
@@ -48,9 +47,9 @@ const Faqs = () => {
                             Contact Us Today
                         </button>
                     </Link>
-                </div>
-                <FaqsComponent />
+                
             </div>
+            </section>
         </div>
     )
 }

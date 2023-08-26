@@ -12,18 +12,11 @@ const About = () => {
         <>
             <div className="about-page" style={{backgroundImage: `url(${aboutBg})`}}>
             <div className="tint">
-                <section className="about-head__section" >
-                    
-                    <h1 className="about-header">
-                        We are <br/>
-                        Maya Electric.
-                    </h1>
-                    {/* <p className="about-typography">
-                        With over a decade of experience in the residential electrical field, <br/>
-                        we thrive to offer truly smart home lighting with no shortcuts taken, <br/>
-                        all at an affordable and transparent cost.
-                    </p> */}
-                </section>
+                <h1 className="about-header">
+                    We are <br/>
+                    Maya Electric.
+                </h1>
+                
                 <section className="about-body">
                     <div className="story-container">
                         <h3 className="story-header">

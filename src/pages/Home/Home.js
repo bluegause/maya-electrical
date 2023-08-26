@@ -1,18 +1,15 @@
 import React, { useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { interiorBackground, exteriorBackground, Transparentlogo, SDhouses } from "../../assets/AssetsIndex";
+import { Link } from "react-router-dom";
+import { heroBg,interiorBackground, Transparentlogo, SDhouses, logoFullTransparent } from "../../assets/AssetsIndex";
 import { Money, Leaf, Login, Tune, Light, Panel, Wireless, Tools, Upgrade, House } from "../PageIndex";
 import Card from '../../components/Card/Card';
 import { responsive, serviceData } from "../../data";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import "./home.css";
-
-
-
 
 
 const Home = () => {
@@ -36,95 +33,94 @@ const Home = () => {
 
     return (
         <>
-            <div className="home-hero" style={{backgroundImage: `url(${interiorBackground})`}}>
-                <div className="hero-container" data-aos-duration="10000" data-aos = "fade-in">
-                    <h1 className="hero-header">
-                        Elevate <br/>
-                        Your <br/>
-                        Lifestyle. <br/>
-                    </h1>
-                    <p className="hero-subheading">
-                        With Maya Electric's smart home installations, You can unlock
-                        <br/>
-                        the full potential of your residence. Contact us today for a quote and<br/> 
-                        give your property the <i className="italic-text"> upgrade that it deserves.</i>
-                    </p>
-                    <div className="hero-button__container">
-                        <NavLink to="/contact" className="contact-link">
-                            <button className="contact-btn">
-                                Schedule Today
-                            </button>
-                        </NavLink>
-                        <NavLink to="/services" className="contact-link">
-                            <button className="contact-btn">
-                                What We Offer
-                            </button>
-                        </NavLink>
+            <div className="home-hero" style={{backgroundImage: `url(${heroBg})`}}>
+                <div className="hero-tint" data-aos-duration="10000" data-aos = "fade-in">
+                    <div className="hero-container">
+                        <h1 className="hero-header">
+                            Elevate <br/>
+                            Your <br/>
+                            Lifestyle. <br/>
+                        </h1>
+                        <p className="hero-subheading">
+                            With Maya Electric's smart home lighting installations, You can unlock 
+                            the full potential of your residence. Contact us today for a quote and 
+                            give your property the <i className="italic-text"> upgrade that it deserves.</i>
+                        </p>
+                        <div className="hero-button__container">
+                            <Link to="/contact" className="contact-hero__link">
+                                <button className="contact-hero__contact">
+                                    Schedule Today
+                                </button>
+                            </Link>
+                            <Link to="/services" className="contact-hero__link">
+                                <button className="contact-hero__offer">
+                                    What We Offer
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <section className="home1-section">
-                <h3 className="home1-header" data-aos = "fade-in">
-                    Technology Meets <br/>
-                    <i>Efficiency</i>
-                    <hr className="home1-hr" data-aos = "slide-up"/>
-                </h3>
-                
-                <div className="home1-content">
-                    <h4 className="home1-subheading__small" data-aos="slide-right">
-                        Why Should You Upgrade
-                        Your Property?
-                    </h4>
-                    <div className="home1-icon__wrapper" data-aos = "slide-right">
-                        <div className="home1-icon">
-                            <p className="home1-icon__caption">Save Money</p>
-                            <Money sx={{fontSize: '28px', marginRight: '10px'}}/>
-                        </div>
-
-                        <div className="home1-icon">
-                            <p className="home1-icon__caption">Energy Efficient</p>
-                            <Leaf sx={{fontSize: '28px', marginRight: '10px'}}/>
-
-                        </div>
-
-                        <div className="home1-icon">
-                            <p className="home1-icon__caption">Remote Accessibility</p>
-                            <Login sx={{fontSize: '28px', marginRight: '10px'}}/>
-                            
-                        </div>
-
-                        <div className="home1-icon last">
-                            <p className="home1-icon__caption">Control & Customizablity</p>
-                            <Tune sx={{fontSize: '28px', marginRight: '10px'}}/>
-                        </div>
-                    </div>
-                    <div className="home1-typography" data-aos = "slide-left">
-                        <h4 className="home1-subheading">
-                            Why Should You Upgrade <br/>
+                <div className="home1-bg">
+                    <h2 className="home1-header" data-aos = "fade-in">
+                        Home Lighting Made <i>Efficient</i>
+                    </h2>
+                    <hr />
+                    <div className="home1-content" data-aos = "fade-in">
+                        <h4 className="home1-subheading__small" data-aos="slide-right">
+                            Why Should You Upgrade
                             Your Property?
                         </h4>
-                        <p className="home1-text">
-                            Smart home technology allows you to automate, control and monitor various aspects of your home,
-                            such as lighting, temperature, window shades and electricity consumption, through a centralized system or remotely through an app.
-                            Allowing you to manage your property in a more convenient way. 
-                        </p>
-                        
+                        <div className="home1-icon__wrapper" data-aos = "slide-right">
+                            <div className="home1-icon">
+                                <p className="home1-icon__caption">Save Money</p>
+                                <Money sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            </div>
+
+                            <div className="home1-icon">
+                                <p className="home1-icon__caption">Energy Efficient</p>
+                                <Leaf sx={{fontSize: '28px', marginRight: '10px'}}/>
+
+                            </div>
+
+                            <div className="home1-icon">
+                                <p className="home1-icon__caption">Remote Accessibility</p>
+                                <Login sx={{fontSize: '28px', marginRight: '10px'}}/>
+                                
+                            </div>
+
+                            <div className="home1-icon last">
+                                <p className="home1-icon__caption">Control & Customizablity</p>
+                                <Tune sx={{fontSize: '28px', marginRight: '10px'}}/>
+                            </div>
+                        </div>
+                        <div className="home1-typography" data-aos = "slide-left">
+                            <h4 className="home1-subheading">
+                                Why Should You Upgrade <br/>
+                                Your Property?
+                            </h4>
+                            <p className="home1-text">
+                                Smart home technology allows you to automate, control and monitor various aspects of your home, such as lighting, temperature, window shades and electricity consumption, through a centralized system or remotely through an app.
+                                Allowing you to manage your property in a more convenient way. 
+                            </p>
+                            
+                        </div>
                     </div>
-                </div>
-                <div className="home1-button__container" data-aos = "fade-in">
-                    <Link to="/services" className="services-routing" style={{textDecoration: "none"}}>
-                        <button className="home1-button">Explore Options</button>
-                    </Link>
-                </div>
+                    <div className="home1-button__container" data-aos = "fade-in">
+                        <Link to="/services" className="services-routing" style={{textDecoration: "none"}}>
+                            <button className="home1-button">Explore Options</button>
+                        </Link>
+                    </div>
+                </div> 
             </section>
 
-            <section className="home2-section" style={{backgroundImage: `url(${exteriorBackground})`}}>
+            <section className="home2-section" style={{backgroundImage: `url(${interiorBackground})`}}>
                 <div className="home2-container">
                     <div className="home2-header__wrapper" data-aos = 'fade-in'>
                         <h4 className="home2-header">
-                            Upgrade Your Home <br/>
-                            with
+                            Upgrade Your Home with
                         </h4>
                         <p className="home2-bold">
                             MAYA ELECTRIC
@@ -149,12 +145,13 @@ const Home = () => {
                             responsive={responsive}>
                                 {service}
                         </Carousel>      
-                    </div>               
+                    </div> 
+                                 
                 </div>
             </section>
 
             <section className="home3-section">
-                <h3 className="home3-header">
+                <h3 className="home3-header" data-aos = "fade-in">
                     Why Choose Maya Electric?
                 </h3>
                 <div className="home3-container" data-aos = 'fade-up' data-aos-duration="10000">
@@ -202,7 +199,7 @@ const Home = () => {
                             Located and operated in San Diego, Maya Electric is happily serving every residential property wanting to upgrade or update. We offer our services to exisiting smart home owners, as well as those who are trying to convert their new & current properties to a smart home. We thrive to offer the best services, at competitive prices, making sure you and your property are 100% satisfied.
                             <br/>
                             <br/>
-                            With a team of experts, you'll always be confident that your home is in good hands. From smart lighting to panelized systems, we have got you covered!      
+                            With a team of experts, you'll always be confident that your home is in good hands. From smart lighting to panelized systems, we have got you covered. Contact us today and transform your home's lighting today! 
                         </p>
                         <Link to="/contact" className="home3-link">
                             <button className="home3-button">
@@ -218,18 +215,32 @@ const Home = () => {
                     <div className="end-head__wrapper">
                         <img className="end-logo" alt='Maya Electric Logo' src={Transparentlogo} /> 
                         <h3 className="end-header">
-                                Take the Next Step, <br/>
-                                The <i>Maya Electric</i> Way
+                                Smart Home Lighting, <br/>
+                                Made Easy & Affordable
                         </h3>
                     </div>
                     <div className="end-info__container">
                         <div className="end-icons__wrapper">
-                            <Light sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
-                            <Panel sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
-                            <Wireless sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
-                            <Tools sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
-                            <Upgrade sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
-                            <House sx={{fontSize: '50px', borderRadius: '100%', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                            <div className="icons-wrap__container">
+                                <Light sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Panel sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Wireless sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                            </div>
+                            <div className="icons-wrap__container">
+                                <Tools sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Upgrade sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <House sx={{fontSize: '50px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                            </div>
+                            <div className="icons-wrap__container2">
+                                <Light sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Panel sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Wireless sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                            </div>
+                            <div className="icons-wrap__container2">
+                                <Tools sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <Upgrade sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                                <House sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
+                            </div>
                         </div>
                         <p className="end-typography">
                             Maya Electric is ready to take your home, rental property, or apartment to the next level with smart home technologies and innovative devices. With state of the art products, reasonable prices, and experience, we will guarentee a fast and worry free installation to make sure you and your home are taken care of. 

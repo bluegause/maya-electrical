@@ -52,18 +52,18 @@ const FaqsComponent = () => {
     return (
         <div className='accordion-container'>
             {/* First Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{borderRadius: '10px 10px 0 0'}}>
+            <Accordion className='accordion' expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{background: '#414141', borderRadius: '10px 10px 0 0', border: ' solid #FFFFFF', marginBottom: '5px'}}>
                 <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}}/>}
+                    expandIcon={<ExpandMore style={{color: '#2153CC'}}/>}
                     aria-controls="panel1-content"
                     id="panel1-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF', borderRadius: '10px 10px 0 0'}}
+                    style={{backgroundColor: '#DEDEDE', color: '#414141'}}
                 >
                     <h4 className='accordion-question'>
                         What is a smart home?
                     </h4>
                 </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
+                <AccordionDetails sx={{color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}>
                     <p className='accordion-answer'>
                         To simply put it, a smart home is a residence equipped with various devices and appliances that can be controlled and automated through a mobile/tablet app or wallmounted control panel. The devices in your home are interconnected on a internet network, allowing you to control functions such as security, temperature, lighting, entertainment devices etc.
                     </p>
@@ -71,18 +71,18 @@ const FaqsComponent = () => {
             </Accordion>
 
             {/* Second Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion className='accordion' expanded={expanded === 'panel2'} onChange={handleChange('panel2')} style={{background: '#414141', borderRadius: '10px 10px 0 0', border: 'solid #FFFFFF', marginBottom: '5px'}}>
                 <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
+                    expandIcon={<ExpandMore style={{color: '#2153CC'}} />}
                     aria-controls="panel2-content"
                     id="panel2-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
+                    style={{backgroundColor: '#DEDEDE', color: '#414141'}}
                 >
                     <h4 className='accordion-question'>
                         What are the benefits of having a smart home ?
                     </h4>
                 </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
+                <AccordionDetails sx={{color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}>
                     <p className='accordion-answer'>
                         Smart homes offer a ton of benefits for your everyday use.
                     </p>
@@ -107,18 +107,18 @@ const FaqsComponent = () => {
             </Accordion>
 
             {/* Third Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <Accordion className='accordion' expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{background: '#414141', borderRadius: '10px 10px 0 0', border: 'solid #FFFFFF', marginBottom: '5px'}}>
                 <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
+                    expandIcon={<ExpandMore style={{color: '#2153CC'}} />}
                     aria-controls="panel3-content"
                     id="panel3-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
+                    style={{backgroundColor: '#DEDEDE', color: '#414141'}}
                 >
                     <h4 className='accordion-question'>
-                        How can turning my Airbnb or rental property into a smart home benefit me?
+                        How is turning my Airbnb or rental property into a smart home beneficial?
                     </h4>
                 </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
+                <AccordionDetails sx={{color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}>
                     <p className='accordion-answer'>
                         Turning your rental properties into smart homes can ultimately give you piece of mind when you're not there. From remote controlled locks, to camera monitoring, you'll always feel like your property has a second pair of eyes always looking over your investments.
                     </p>
@@ -126,18 +126,18 @@ const FaqsComponent = () => {
             </Accordion>
 
             {/* Fourth Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <Accordion className='accordion' expanded={expanded === 'panel4'} onChange={handleChange('panel4')} style={{background: '#414141', borderRadius: '10px 10px 0 0', border: 'solid #FFFFFF', marginBottom: '5px'}}>
                 <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
+                    expandIcon={<ExpandMore style={{color: '#2153CC'}} />}
                     aria-controls="panel4-content"
                     id="panel4-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
+                    style={{backgroundColor: '#DEDEDE', color: '#414141'}}
                 >
                     <h4 className='accordion-question'>
                         Can I control my smart home devices when I'm not home?
                     </h4>
                 </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
+                <AccordionDetails sx={{color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}>
                     <p className='accordion-answer'>
                         Yes! Smart homes can be controlled through remote access. By connecting your devices to the internet, you can use various methods to control them from anywhere including smartphone applications, voice assistant apps, web interfaces, remote control hubs, etc.
                     </p>
@@ -145,96 +145,20 @@ const FaqsComponent = () => {
             </Accordion>
 
             {/* Fifth Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+            <Accordion className='accordion' expanded={expanded === 'panel5'} onChange={handleChange('panel5')} style={{background: '#414141', borderRadius: '10px 10px 0 0', border: 'solid #FFFFFF', marginBottom: '5px'}}>
                 <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
+                    expandIcon={<ExpandMore style={{color: '#2153CC'}} />}
                     aria-controls="panel5-content"
                     id="panel5-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
+                    style={{backgroundColor: '#DEDEDE', color: '#414141'}}
                 >
                     <h4 className='accordion-question'>
                         Can I save more energy and money with a smart home?
                     </h4>
                 </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
+                <AccordionDetails sx={{color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}>
                     <p className='accordion-answer'>
                         Smart homes are designed to be more energy efficient in many ways. There is energy monitoring, which allows you to identify the devices that are more energy-hungry allowing you reduce usage. There is also options like smart thermostats that enable you to control temperature more efficiently. There is even light automation that allows you to schedule when your lights turn on and off, avoiding unnecessary lighting and ultimately saving you money on your electric bill in the end. 
-                    </p>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Sixth Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
-                    aria-controls="panel6-content"
-                    id="panel6-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
-                >
-                    <h4 className='accordion-question'>
-                        What are some smart home security features?
-                    </h4>
-                </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
-                    <p className='accordion-answer'>
-                        Smart home security features provide enhanced protection and peace of mind for homeowners. There are smart devices like security cameras and video door bells that allow monitoring remotely. There is geofencing, which is a feature that uses your smartphone's location to trigger actions based on your proximity to your home. There is even smart locks that provide keyless entry, allowing you to lock your doors from anywhere remotely.
-                    </p>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Seventh Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
-                    aria-controls="panel7-content"
-                    id="panel7-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
-                >
-                    <h4 className='accordion-question'>
-                        If my internet stops working, can I still control my lights?
-                    </h4>
-                </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
-                    <p className='accordion-answer'>
-                        Though you will not be able to control the lighting with your mobile phone or tablet, you can still turn them on and off using the switches and keypads mounted on the wall. This will still allow you to have control over your lighting regardless of any issues with internet. 
-                    </p>
-                </AccordionDetails>
-            </Accordion>
-
-            {/* Eighth Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
-                    aria-controls="panel8-content"
-                    id="panel8-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF'}}
-                >
-                    <h4 className='accordion-question'>
-                        Do I need faster internet for my smart lighting?
-                    </h4>
-                </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111'}}>
-                    <p className='accordion-answer'>
-                        With commands being the only thing your smart lighting will require a internet connection for, it does not necessarily need faster interenet speeds to work efficiently. So, regardless of having every room with smart lighting, it will not consume so much bandwidth and slow down your internet speeds.
-                    </p>
-                </AccordionDetails>
-            </Accordion>
-
-            {/*  Nineth Question */}
-            <Accordion className='accordion' expanded={expanded === 'panel9'} onChange={handleChange('panel9')} style={{borderRadius: '0 0 10px 10px'}}>
-                <AccordionSummary
-                    expandIcon={<ExpandMore style={{color: '#406FE0'}} />}
-                    aria-controls="panel9-content"
-                    id="panel9-header"
-                    style={{backgroundColor: '#0E1111', color: '#FFFFFF', borderRadius: '0 0 10px 10px'}}
-                >
-                    <h4 className='accordion-question'>
-                        Do I need a stronger Wi-Fi connection?
-                    </h4>
-                </AccordionSummary>
-                <AccordionDetails style={{backgroundColor: "#FFFFFF", color: '#0E1111', borderRadius: '0 0 10px 10px'}}>
-                    <p className='accordion-answer'>
-                        No you do not. Smart switches have their own communcation systems and do not interfere with your Wi-Fi. 
                     </p>
                 </AccordionDetails>
             </Accordion>

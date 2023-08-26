@@ -1,6 +1,15 @@
 .accordion-container {
     width: 48%;
+    background: transparent;
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 1em;
 }
+
+.MuiPaper-root{
+    border-radius: 10px !important ;
+  }
 
     .accordion-question {
         font-size: 1em;
@@ -9,6 +18,7 @@
     .accordion-answer {
         font-size: .9em;
         line-height: 1.5em;
+        font-weight: 300;
     }
 
     .benefits-list {

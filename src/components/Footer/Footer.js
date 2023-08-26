@@ -17,7 +17,7 @@ const Footer = () => {
                     </div>
                     <p className='footer-description'>
                         Specializing in smart home installations that elevate your home experience, all at an affordable and time efficent manner. <br/>
-                        Elevate your home - <br/> The Maya Electric way.
+                        Elevate your home<br/>  - The Maya Electric way.
                     </p>
                 </div>
                 <div className='footer-mid__left'>
@@ -63,7 +63,35 @@ const Footer = () => {
                         Give us a follow on the following social media platforms<br/>
                         @MayaElectric
                     </p>
+                    <p className='footer-right__username'>
+                        @MayaElectric
+                    </p>
                 </div>
+                <div className='footer-mobile'>
+                    <div className='footer-left__header'>
+                        <img src={Transparentlogo} alt='logo' />
+                        <h2 className='footer-company'>
+                            MAYA ELECTRIC
+                        </h2>
+                    </div>
+                    <div className='footer-icons__wrapper2'>
+                        <div className='footer-icon'>
+                            <Instagram style={{fontSize: '35px'}}/>
+                        </div>
+                        <div className='footer-icon'>
+                            <Facebook style={{fontSize: '35px'}}/>
+                        </div>
+                        <div className='footer-icon'>
+                            <Google style={{fontSize: '35px'}}/>
+                        </div>
+                    </div>
+                    <address className='mobile-subheading'>
+                        Alberto Maya | Founder, Owner <br/>
+                        San Diego, CA <br/>
+                        Est. 2023
+                    </address>
+                </div>
+
                 
             </footer>
             <p className='copy-right'>

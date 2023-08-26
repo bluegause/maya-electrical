@@ -9,56 +9,36 @@
 .tint {
     width: 100%;
     height: 100%;
-    padding: 12rem 0 6em 0;
+    padding: 8rem 0 2em 0;
     background-color: rgba(0, 0, 0, .4);
 }
 
 /* About Header Section */
-
-    .about-head__section {
+    .about-header {
         width: 100%;
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 2em 0;
-
+        margin: 1em 0;
+        font-size: 6em;
+        font-weight: 600;
+        line-height: 1.1em;
+        text-align: center;
     }
-
-
-
-            .about-header {
-                width: 100%;
-                margin-left: 5%;
-                font-size: 6em;
-                font-weight: 600;
-                line-height: 1.1em;
-                text-align: center;
-            }
-
-            .about-typography {
-                width: 100%;
-                margin-left: 5%;
-                margin-top: .5em;
-                line-height: 1.6em;
-                font-size: 1.5em;
-                text-align: center;
-            }
 /* Main Content */
         .about-body {
             width: 100%;
-            /* background: linear-gradient(to bottom right, #414141, #406FE0,#2153CC); */
-            padding: 2em 0;
+            padding: 1em 0;
         }
 
  /* How we Started */
             .story-container {
                 width: 90%;
                 padding: 2em 0;
-                margin: 1em auto;
-                border: 1px solid white;
-                border-radius: 10px;
-                background-color: rgba(33, 83, 204, 0.3);
+                margin: .5em auto;
+                border-radius: 5px;
+                background: rgba( 64, 111, 224, 0.6);
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 1px );
+                -webkit-backdrop-filter: blur( 1px );
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
 
             }
 
@@ -66,17 +46,21 @@
                     font-size: 2.5em;
                     text-align: center;
                     margin-top: .5em;
+                    font-weight: 500;
                 }
 
                 .story-subheading {
                     text-align: center;
                     margin: .5em 0 .25em 0;
                     font-size: 1.4em;
+                    font-weight: 400;
+                    color: #FFFFFF;
                 }
 
                 .story-typography {
-                    font-size: 1.1em;
-                    margin-bottom: 1em;
+                    width: 95%;
+                    font-size: 1em;
+                    margin: 0 auto 1em auto;
                     line-height: 1.6em;
                     text-align: center;
                     font-weight: 300;
@@ -93,31 +77,38 @@
 
             .mission-wrapper {
                 width: 49%;
-                border: 1px solid white;
                 margin-right: 1%;
-                background-color: rgba(33, 83, 204, 0.3);
-                border-radius: 10px;
+                background: rgba( 64, 111, 224, 0.6);
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 1px );
+                -webkit-backdrop-filter: blur( 1px );
+                border-radius: 5px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding: 2em 0;
             }
 
                 .mission-header {
                     padding-top: .5em;
                     text-align: center;
-                    font-size: 2em;
+                    font-size: 2.5em;
+                    font-weight: 500;
                 }
 
                 .mission-subheading {
                     text-align: center;
                     margin: .5em 0 .25em 0;
                     font-size: 1.4em;
+                    font-weight: 400;
+                    color: #FFFFFF;
+
                 }
 
                 .mission-typography {
-                    width: 95%;
+                    width: 90%;
                     line-height: 1.6em;
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     font-weight: 300;
                 }
 
@@ -125,14 +116,19 @@
                 width: 49%;
                 margin-left: 1%;
                 border: 1px solid white;
-                background-color: rgba(33, 83, 204, 0.3);
-                border-radius: 10px;
+                background: rgba( 64, 111, 224, 0.6);
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 1px );
+                -webkit-backdrop-filter: blur( 1px );
+                border-radius: 5px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
                 padding: 2em 0;
             }
 
                 .vision-header {
                     padding-top: .5em;
-                    font-size: 2em;
+                    font-size: 2.5em;
+                    font-weight: 500;
                     text-align: center;
                 }
                 
@@ -140,14 +136,15 @@
                     text-align: center;
                     margin: .5em 0 .25em 0;
                     font-size: 1.4em;
+                    color: #FFFFFF;
                 }
 
                 .vision-typography {
-                    width: 95%;
+                    width: 90%;
                     line-height: 1.6em;
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     font-weight: 300;
                 }
 

@@ -2,12 +2,12 @@ import { Light, Panel, Wireless, Tools, Upgrade, House } from "./pages/PageIndex
 
 export const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1110 },
       items: 3,
       slidesToSlide: 3 
     },
     tablet: {
-      breakpoint: { max: 1024, min: 710 },
+      breakpoint: { max: 1110, min: 710 },
       items: 2,
       slidesToSlide: 2 
     },

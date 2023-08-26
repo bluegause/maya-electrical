@@ -1,3 +1,4 @@
+import heroBg from './heroBg.jpg';
 import interiorBackground from "./homeInterior.jpg";
 import exteriorBackground from './home.jpg';
 import Transparentlogo from './mayalogo-trnsprnt.png';
@@ -8,8 +9,13 @@ import basicService from './basicService.jpg';
 import mayaWhite from './mayaLogo-white.jpeg';
 import aboutBg from './about-background.jpg';
 import faqsBg from './faqsBg.jpg';
+import Questions from './question.png';
+import basicImage from './basic-image.jpg';
+import fullLogo from './logo-full.jpeg';
+import logoFullTransparent from './logo-full-transparent.png';
 
 export {
+    heroBg,
     interiorBackground,
     exteriorBackground,
     Transparentlogo,
@@ -19,5 +25,9 @@ export {
     basicService,
     mayaWhite, 
     aboutBg, 
-    faqsBg
+    faqsBg,
+    Questions,
+    basicImage,
+    fullLogo,
+    logoFullTransparent
 }

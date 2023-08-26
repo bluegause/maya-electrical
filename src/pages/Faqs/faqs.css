@@ -1,12 +1,13 @@
 .faqs-page {
     width: 100%;
+    background: #DEDEDE;
+
 }    
 
     .faqs-head {
         width: 100%;
         margin: 0 auto;
         
-
         /* background */
         background-size: cover;
         background-position: center center;
@@ -14,14 +15,19 @@
 
         .head-tint {
             width: 100%;
-            padding: 14em 0 12em 0;
+            height: 100%;
+            padding-top: 10em;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
             text-align: center;
             color: #FFFFFF;
-            background-color: rgba(0, 0, 0, .45);
+            background-color: rgba(0, 0, 0, .6);
         }
 
         .faqs-main__header {
-            font-size: 4em;
+            font-size: 5em;
             font-weight: 500;
             line-height: 1.2em;
             margin-bottom: .25em;
@@ -30,42 +36,63 @@
         .faqs-main__subheading {
             width: 90%;
             margin: 0 auto;
-            font-size: 1.6em;
+            font-size: 1.2em;
             font-weight: 300;
-            line-height: 1.4em;
+            line-height: 1.6em;
         }
     
     .faqs-container {
         width: 100%;
-        padding: 4em 0;
-        vertical-align: center;
+        padding: 2em 0 4em 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-end;
         justify-content: space-evenly;
-        background: linear-gradient( to bottom right, #0E1111, #414141, #D3D3D3);
+        background-color: rgba(0, 0, 0, .6)
+
+
     }
 
         .faqs-info__wrapper {
-            width: 48%;
+            width: 90%;
             color: #FFFFFF;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin: 0 auto;
+            padding: 2em 1em;
+            background: rgba( 64, 111, 224, 0.9 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 2px );
+            -webkit-backdrop-filter: blur( 2px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
             .faqs-header {
-                font-size: 2.5em;
+                font-size: 3em;
+                font-weight: 500;
                 margin: .5em 0;
                 text-align: center;
             }
 
+            .faqs-component__container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
             .faqs-subheading {
-                width: 95%;
-                font-size: 1.1em;
-                line-height: 1.5em;
+                width: 90%;
+                font-size: 1.2em;
+                line-height: 1.6em;
+                font-weight: 300;
                 text-align: center;
+                color: #FFFFFF;
+                margin: 1em auto;
             }
 
             .faqs-contact__link {
@@ -82,7 +109,7 @@
                 color: #FFFFFF;
                 padding: 10px 15px;
                 border-radius: 25px;
-                width: 50%;
+                width: 30%;
                 overflow: hidden;
                 background: transparent;
                 position: relative;
