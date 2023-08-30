@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Card, CardContent, Grid, TextField, Button } from '@mui/material';
-import { fullLogo, exteriorBackground, logoFullTransparent } from "../../assets/AssetsIndex";
+import { exteriorBackground, logoFullTransparent } from "../../assets/AssetsIndex";
 import './contact.css';
 import { Email, Phone } from "../PageIndex";
 
@@ -22,11 +22,11 @@ const Contact = () => {
                 <section className="contact-header__container" style={{backgroundImage: `url(${exteriorBackground})`}}>
                     <div className="contact-header__tint">
                         <h2 className="contact-header">
-                            Contact Us Today
+                            Contact Us
                         </h2>
-                        <p className="contact-header__typography">
+                        {/* <p className="contact-header__typography">
                             Whether if it's finding an answer, or scheduling an appointment, give us a call or send a message. Take the next step in the smart direction today. From new to exisiting homes, personal to rental properties, Maya Electric is commited to turning your home smarter, safer and more efficient. 
-                        </p>
+                        </p> */}
                     </div>
                 </section>
                 <div className="contact-container">
@@ -34,22 +34,24 @@ const Contact = () => {
                         <img src={logoFullTransparent}  alt="maya electric logo" className="header-logo"/>  
                         <div className="contact-lower__wrapper">
                             <p className="contact-subheading">
-                                Send us a message including the address, type of installation that is wanted, as well as your contact information that will be best to reach you at. Or give us a call and let's get your home started. 
+                                Take the next step in the smart direction today. From new to exisiting homes, personal to rental properties, Maya Electric is commited to turning your home smarter, safer and more efficient. 
+
+                                Send us a message including the address, type of installation that is wanted, as well as your contact information that will be best to reach you at.
                             </p>
-                            <div className="contact-icons__container">
+                            {/* <div className="contact-icons__container">
                                 <div className="contact-icon__wrapper">                           
-                                    <Phone style={{fontSize: '30px', background: 'rgba(33, 83, 204, 1)', color: '#FFFFFF', padding: '5px', borderRadius: '5px'}} />
+                                    <Phone style={{fontSize: '30px', background: '#FFFFFF', color: '#2153CC', padding: '5px', borderRadius: '5px'}} />
                                     <a href="tel:8583868083" className="contact-phone">
                                         +1(858)386-8083
                                     </a>
                                 </div>
                                 <div className="contact-icon__wrapper2">
-                                    <Email style={{fontSize: '30px', background: 'rgba(33, 83, 204, 1)', color: '#FFFFFF', padding: '5px', borderRadius: '5px'}} />
+                                    <Email style={{fontSize: '30px', background: '#FFFFFF', color: '#2153CC', padding: '5px', borderRadius: '5px'}} />
                                     <a href="email:alberto@mayaelectrical.com" className="contact-email">
                                         Alberto@mayaelectrical.com
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
                     <section className="form-container">

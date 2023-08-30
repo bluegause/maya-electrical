@@ -42,13 +42,12 @@
         }
 
     .contact-container {
-        width: 95%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-evenly;
-        border-radius: 5px;
         padding: 2em 0;
         margin: 0 auto;
     }
@@ -91,50 +90,47 @@
                         width: 100%;
                         margin: 1em 0;
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         align-items: center;
-                        justify-content: space-evenly;
+                        justify-content: center;
                     }
 
                         .contact-icon__wrapper {
-                            width: 35%;
+                            width: 100%;
                             display: flex;
                             align-items: center;
-                            justify-content: flex-start;
-                            background-color: rgba(255, 255, 255, .4);
+                            justify-content: center;
                             padding: 5px 10px;
                             border-radius: 5px;
                         }
 
                             .contact-phone {
-                                width: 30%;
+                                max-width: 100%;
                                 color: #FFFFFF;
                                 font-weight: 500;
                                 text-decoration: none;
                                 font-size: 1.2em;
-                                padding-left: 5px;
+                                margin-left: 2px;
                                 transition: all ease .3s;
                             }
 
                             .contact-phone:hover {
-                                color: #2153CC;
+                                color: #414141;
                                 transition: all ease .3s;
 
 
                             }
 
                         .contact-icon__wrapper2 {
-                            width: 50%;
+                            width: 100%;
                             display: flex;
                             align-items: center;
-                            justify-content: flex-start;
-                            background: rgba(255, 255, 255, .4);
+                            justify-content: center;
                             padding: 5px 10px;
                             border-radius: 5px;
                         }
 
                             .contact-email {
-                                width: 100%;
                                 color: #FFFFFF;
                                 font-weight: 500;
                                 text-decoration: none;
@@ -146,7 +142,7 @@
                             }
 
                             .contact-email:hover {
-                                color: #2153CC;
+                                color: #414141;
                                 transition: all ease .3s;
 
 
@@ -182,4 +178,46 @@
             margin: .5em 0;
         }
 
-        
+/* media query */
+
+@media screen and (max-width: 850px) {
+
+    .contact-page {
+        padding-bottom: 3em;
+    }
+
+    .contact-header__tint {
+        height: 100%;
+        padding: 10em 0 3em 0;
+    }
+
+    .contact-container {
+        padding-top: 1em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .contact-info__section {
+            width: 100%;
+        }
+
+            .header-logo {
+                margin-bottom: 0;
+            }
+
+            .contact-lower__wrapper {
+                width: 100%;
+                background-color: transparent;
+                box-shadow: none;
+                color: #414141;
+            }
+            .contact-subheading {
+                width: 95%;
+                font-size: 1.1em;
+            }
+
+    .form-container {
+        width: 95%;
+    }
+}

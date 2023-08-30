@@ -302,6 +302,7 @@
             margin-bottom: .1em;
         }
 
+
         .services-end__container {
             display: flex;
             flex-direction: column;
@@ -524,8 +525,40 @@
             width: 98%;
         }
 
+        .services-subheading > span {
+            display: none;
+        }
+
         .services-header__button {
             width: 45%;
+        }
+
+        .basic-typography {
+            display: none;
+        }
+
+        .works-typography {
+            display: none;
+        }
+
+        .services-end__tint {
+            padding: 5em 0;
+        }
+
+        .services-end__buttons {
+            flex-direction: column;
+        }
+
+        .service-button__link {
+            width: 80%;
+        }
+
+        .service-button__wrapped {
+            width: 100%;
+        }
+
+        .service-button {
+            width: 80%;
         }
 }
 
