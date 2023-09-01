@@ -2,12 +2,18 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import { Servicesbg, mayaWhite } from '../../assets/AssetsIndex';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './services.css';
 
 const Services = () => {
 
     useEffect(() => {
         window.scroll(0,0)
+    }, []);
+
+    useEffect(() => {
+        Aos.init({ duration: "1500"});
     }, [])
 
     return (
@@ -15,7 +21,7 @@ const Services = () => {
             <div className='services-container'>
 
                 <section className='services-header__bg' style={{backgroundImage: `url(${Servicesbg})`}}>
-                    <div className='services-header__container'>
+                    <div className='services-header__container' data-aos="fade-in">
                         <h2 className='services-header'>
                             Smart home lighting  <br/>
                             made easy.
@@ -32,7 +38,7 @@ const Services = () => {
                 </section>
                 <section className='services1-section'>
                     <div className='services1-options__container'>
-                        <div className='basic-package__section'>
+                        <div className='basic-package__section' data-aos="slide-left">
                             <div className='basic-content'>
                                 <h3 className='basic-package__header'>
                                     Basic Installations and Upgrades
@@ -88,7 +94,7 @@ const Services = () => {
                                 </Link>
                                 </div>
                         </div>
-                        <div className='the-works__section'>
+                        <div className='the-works__section' data-aos="slide-right">
                             <div className='works-content'>
                                 <h3 className='the-works__header'>
                                     Custom Panelized System
@@ -136,17 +142,12 @@ const Services = () => {
                                         </p>
                                     </Grid>
                                 </Grid>
-                                <Link to='/contact' className='works-sm__link'>
-                                    <button className='works-sm__button'>
-                                        Schedule Now
-                                    </button>
-                                </Link>
                             </div>
                         </div>
                     </div>
                 </section>
                 <div className='services-end' style={{backgroundImage: `url(${mayaWhite})`}}>
-                    <div className='services-end__tint'>
+                    <div className='services-end__tint' data-aos="fade-in" data-aos-duration="5000">
 
                     
                     <h3 className='services-end__header'>

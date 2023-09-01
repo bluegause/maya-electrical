@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { aboutBg } from '../../assets/AssetsIndex';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 import './about.css';
 
 const About = () => {
@@ -8,17 +10,21 @@ const About = () => {
         window.scroll(0,0)
     }, []);
 
+    useEffect(() => {
+        Aos.init({ duration: "1500"});
+    }, []);
+
     return (
         <>
             <div className="about-page" style={{backgroundImage: `url(${aboutBg})`}}>
             <div className="tint">
-                <h1 className="about-header">
+                <h1 className="about-header"  data-aos="fade-in">
                     We are <br/>
                     Maya Electric.
                 </h1>
                 
                 <section className="about-body">
-                    <div className="story-container">
+                    <div className="story-container" data-aos="slide-up">
                         <h3 className="story-header">
                             - Our Story -
                         </h3>
@@ -30,7 +36,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="statements-container">
-                        <div className="mission-wrapper">
+                        <div className="mission-wrapper" data-aos="slide-right">
                             <h3 className="mission-header">
                                 - Our Purpose -
                             </h3>
@@ -41,7 +47,7 @@ const About = () => {
                                 At Maya Electric, our mission is to revolutionize the electrical industry by providing truly intelligent and affordable smart home lighting solutions. Drawing upon years of experience in fully automated multi-million dollar homes, we are committed to crafting systems that genuinely understand and enhance our customers' lives. We pride ourselves on offering transparent pricing, user-friendly simplicity, and comprehensive bundles that eliminate hidden fees. Our goal is to create non-complicated, astronomical lighting experiences with affordability in mind, that illuminate homes across San Diego and beyond.
                             </p>
                         </div>
-                        <div className="vision-wrapper">
+                        <div className="vision-wrapper" data-aos="slide-left">
                             <h3 className="vision-header">
                                 - Our Goal - 
                             </h3>

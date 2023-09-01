@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { heroBg,interiorBackground, Transparentlogo, SDhouses, logoFullTransparent } from "../../assets/AssetsIndex";
+import { heroBg,interiorBackground, Transparentlogo, SDhouses } from "../../assets/AssetsIndex";
 import { Money, Leaf, Login, Tune, Light, Panel, Wireless, Tools, Upgrade, House } from "../PageIndex";
 import Card from '../../components/Card/Card';
 import { responsive, serviceData } from "../../data";
@@ -29,7 +29,7 @@ const Home = () => {
 
     useEffect(() => {
         Aos.init({ duration: "1500"});
-    }, [])
+    }, []);
 
     return (
         <>

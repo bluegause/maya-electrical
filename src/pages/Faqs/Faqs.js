@@ -3,6 +3,8 @@ import FaqsComponent from '../../components/FaqsComponent/FaqsComponent';
 import FaqsComponent2 from '../../components/FaqsComponent/faqsComponent2';
 import { Link } from 'react-router-dom';
 import { heroBg } from '../../assets/AssetsIndex';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import './faqs.css';
 
@@ -12,8 +14,12 @@ const Faqs = () => {
         window.scroll(0,0)
     }, []);
 
+    useEffect(() => {
+        Aos.init({ duration: "1500"});
+    }, []);
+
     return (
-        <div className='faqs-page'>
+        <div className='faqs-page' data-aos="fade-in">
             <section className='faqs-head' style={{backgroundImage: `url(${heroBg})`}}>
                 <div className='head-tint'>
                     <h1 className='faqs-main__header'>
@@ -27,7 +33,7 @@ const Faqs = () => {
                 </div>
             
                 <div className="faqs-container">
-                    <div className="faqs-info__wrapper">                    
+                    <div className="faqs-info__wrapper" data-aos="slide-up">                    
                         <h3 className="faqs-header">
                             Frequently Asked Questions
                         </h3>
@@ -36,13 +42,13 @@ const Faqs = () => {
                             <FaqsComponent2 />
                         </div>
                     </div>
-                        <p className="faqs-subheading">
+                        <p className="faqs-subheading" data-aos="fade-in">
                             If you are still unsure, or have any concerns/questions that you'd like to ask or get insight on, don't hesitate to contact us, or refer to the FAQs here.
                             
-                            Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.    
+                            Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.
                         </p>
                         
-                        <Link to='/contact' className='faqs-contact__link'>
+                        <Link to='/contact' className='faqs-contact__link' data-aos="fade-in">
                             <button className='faqs-contact__button'>
                                 Contact Us Today
                             </button>
