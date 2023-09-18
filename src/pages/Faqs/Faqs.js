@@ -33,7 +33,7 @@ const Faqs = () => {
                 </div>
             
                 <div className="faqs-container">
-                    <div className="faqs-info__wrapper" data-aos="slide-up">                    
+                    <div className="faqs-info__wrapper" data-aos="fade-in" data-aos-duration="10000">                    
                         <h3 className="faqs-header">
                             Frequently Asked Questions
                         </h3>
@@ -42,18 +42,17 @@ const Faqs = () => {
                             <FaqsComponent2 />
                         </div>
                     </div>
-                        <p className="faqs-subheading" data-aos="fade-in">
-                            If you are still unsure, or have any concerns/questions that you'd like to ask or get insight on, don't hesitate to contact us, or refer to the FAQs here.
-                            
-                            Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.
-                        </p>
+                    <p className="faqs-subheading" data-aos="fade-in">
+                        If you are still unsure, or have any concerns/questions that you'd like to ask or get insight on, don't hesitate to contact us, or refer to the FAQs here.
                         
-                        <Link to='/contact' className='faqs-contact__link' data-aos="fade-in">
-                            <button className='faqs-contact__button'>
-                                Contact Us Today
-                            </button>
-                        </Link>
+                        Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.
+                    </p>
                     
+                    <Link to='/contact' className='faqs-contact__link'>
+                        <button className='faqs-contact__button'>
+                            Contact Us Today
+                        </button>
+                    </Link>   
                 </div>
             </section>
         </div>

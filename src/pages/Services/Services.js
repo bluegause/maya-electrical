@@ -21,7 +21,7 @@ const Services = () => {
             <div className='services-container'>
 
                 <section className='services-header__bg' style={{backgroundImage: `url(${Servicesbg})`}}>
-                    <div className='services-header__container' data-aos="fade-in">
+                    <div className='services-header__container' data-aos="fade-in" data-aos-duration="10000">
                         <h2 className='services-header'>
                             Smart home lighting  <br/>
                             made easy.
@@ -38,7 +38,7 @@ const Services = () => {
                 </section>
                 <section className='services1-section'>
                     <div className='services1-options__container'>
-                        <div className='basic-package__section' data-aos="slide-left">
+                        <div className='basic-package__section' data-aos="slide-left" data-aos-duration="10000">
                             <div className='basic-content'>
                                 <h3 className='basic-package__header'>
                                     Basic Installations and Upgrades
@@ -88,10 +88,10 @@ const Services = () => {
                                         </Grid>
                                     </Grid>
                                     <Link to='/contact' className='basic-sm__link'>
-                                    <button className='basic-sm__button smaller'>
-                                        Schedule Now
-                                    </button>
-                                </Link>
+                                        <button className='basic-sm__button smaller'>
+                                            Schedule Now
+                                        </button>
+                                    </Link>
                                 </div>
                         </div>
                         <div className='the-works__section' data-aos="slide-right">
@@ -142,6 +142,11 @@ const Services = () => {
                                         </p>
                                     </Grid>
                                 </Grid>
+                                <Link to='/contact' className='works-sm__link'>
+                                    <button className='works-sm__button'>
+                                        Schedule Now
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -168,9 +173,9 @@ const Services = () => {
                                     Send a Message
                                 </button>
                             </Link>
-                            <button className='service-button' href='tel:8583868083'> 
+                            <a href='+18582151331' className='service-button'> 
                                 Call Us
-                            </button>
+                            </a>
                         </div>
                     </div>
                     </div>

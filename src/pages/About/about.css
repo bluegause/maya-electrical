@@ -1,151 +1,148 @@
 .about-page {
-    width: 100%;
-    color: #FFFFFF;
-    /* bg styling */
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
+    color: #FFFFFF;
+    width: 100%;
 }
 
 .tint {
-    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
     height: 100%;
     padding: 8rem 0 2em 0;
-    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
 }
 
 /* About Header Section */
     .about-header {
-        width: 100%;
-        margin: 1em 0;
         font-size: 6em;
         font-weight: 600;
         line-height: 1.1em;
+        margin: 1em 0;
         text-align: center;
+        width: 100%;
     }
 /* Main Content */
         .about-body {
-            width: 100%;
             padding: 1em 0;
+            width: 100%;
         }
 
  /* How we Started */
             .story-container {
-                width: 90%;
-                padding: 2em 0;
-                margin: .5em auto;
-                border-radius: 5px;
-                background: rgba( 64, 111, 224, 0.6);
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur( 1px );
                 -webkit-backdrop-filter: blur( 1px );
+                backdrop-filter: blur( 1px );
+                background: rgba( 64, 111, 224, 0.6);
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+                border-radius: 5px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                margin: .5em auto;
+                padding: 2em 0;
+                width: 90%;
             }
 
                 .story-header {
                     font-size: 2.5em;
-                    text-align: center;
-                    margin-top: .5em;
                     font-weight: 500;
+                    margin-top: .5em;
+                    text-align: center;
                 }
 
                 .story-subheading {
-                    text-align: center;
-                    margin: .5em 0 .25em 0;
+                    color: #FFFFFF;
                     font-size: 1.4em;
                     font-weight: 400;
-                    color: #FFFFFF;
+                    margin: .5em 0 .25em 0;
+                    text-align: center;
                 }
 
                 .story-typography {
-                    width: 95%;
                     font-size: 1em;
-                    margin: 0 auto 1em auto;
-                    line-height: 1.6em;
-                    text-align: center;
                     font-weight: 300;
+                    line-height: 1.6em;
+                    margin: 0 auto 1em auto;
+                    text-align: center;
+                    width: 95%;
                 }
 
             .statements-container {
-                width: 90%;
+                align-items: flex;
                 display: flex;
                 flex-direction: row;
-                align-items: flex;
                 justify-content: center;
                 margin: 3em auto;
+                width: 90%;
             }
 
             .mission-wrapper {
-                width: 49%;
-                margin-right: 1%;
-                background: rgba( 64, 111, 224, 0.6);
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur( 1px );
                 -webkit-backdrop-filter: blur( 1px );
-                border-radius: 5px;
+                backdrop-filter: blur( 1px );
+                background: rgba( 64, 111, 224, 0.6);
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
+                border-radius: 5px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                margin-right: 1%;
                 padding: 2em 0;
+                width: 49%;
             }
 
                 .mission-header {
-                    padding-top: .5em;
-                    text-align: center;
                     font-size: 2.5em;
                     font-weight: 500;
+                    padding-top: .5em;
+                    text-align: center;
                 }
 
                 .mission-subheading {
-                    text-align: center;
-                    margin: .5em 0 .25em 0;
+                    color: #FFFFFF;
                     font-size: 1.4em;
                     font-weight: 400;
-                    color: #FFFFFF;
-
+                    margin: .5em 0 .25em 0;
+                    text-align: center;
                 }
 
                 .mission-typography {
-                    width: 90%;
+                    font-size: 1em;
+                    font-weight: 300;
                     line-height: 1.6em;
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 1em;
-                    font-weight: 300;
+                    width: 90%;
                 }
 
             .vision-wrapper {
-                width: 49%;
-                margin-left: 1%;
-                border: 1px solid white;
-                background: rgba( 64, 111, 224, 0.6);
-                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                backdrop-filter: blur( 1px );
                 -webkit-backdrop-filter: blur( 1px );
-                border-radius: 5px;
+                backdrop-filter: blur( 1px );
+                background: rgba( 64, 111, 224, 0.6);
+                border: 1px solid white;
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
+                border-radius: 5px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                margin-left: 1%;
                 padding: 2em 0;
+                width: 49%;
             }
 
                 .vision-header {
-                    padding-top: .5em;
                     font-size: 2.5em;
                     font-weight: 500;
+                    padding-top: .5em;
                     text-align: center;
                 }
-                
+
                 .vision-subheading {
-                    text-align: center;
-                    margin: .5em 0 .25em 0;
-                    font-size: 1.4em;
                     color: #FFFFFF;
+                    font-size: 1.4em;
+                    margin: .5em 0 .25em 0;
+                    text-align: center;
                 }
 
                 .vision-typography {
-                    width: 90%;
+                    font-size: 1em;
+                    font-weight: 300;
                     line-height: 1.6em;
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 1em;
-                    font-weight: 300;
+                    width: 90%;
                 }
 
 /* media query */
@@ -162,22 +159,22 @@
     }
 
     .story-container {
-        width: 95%;
         margin: 0 auto;
-        padding: 1em 0; 
-    }
+        padding: 1em 0;
+        width: 95%;
+}
 
         .story-typography {
             width: 98%;
         }
 
     .statements-container {
-        width: 100%;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         margin-top: 1em;
-    }
+        width: 100%;
+}
 
     .mission-wrapper, .vision-wrapper {
         width: 95%;

@@ -47,15 +47,14 @@ const Home = () => {
                             give your property the <i className="italic-text"> upgrade that it deserves.</i>
                         </p>
                         <div className="hero-button__container">
-                            <Link to="/contact" className="contact-hero__link">
-                                <button className="contact-hero__contact">
+                            <Link to="/contact" className="contact-hero__contact">
+                                {/* <button className="contact-hero__contact">
                                     Schedule Today
-                                </button>
+                                </button> */}
+                                Schedule Today
                             </Link>
-                            <Link to="/services" className="contact-hero__link">
-                                <button className="contact-hero__offer">
-                                    What We Offer
-                                </button>
+                            <Link to="/services" className="contact-hero__offer">
+                                What We Offer
                             </Link>
                         </div>
                     </div>
@@ -108,9 +107,9 @@ const Home = () => {
                             
                         </div>
                     </div>
-                    <div className="home1-button__container" data-aos = "fade-in">
-                        <Link to="/services" className="services-routing" style={{textDecoration: "none"}}>
-                            <button className="home1-button">Explore Options</button>
+                    <div className="home1-button__container">
+                        <Link to="/services" className="home1-link" style={{textDecoration: "none"}}>
+                            <button className="home1-button"  data-aos = "fade-in">Explore Options</button>
                         </Link>
                     </div>
                 </div> 
@@ -194,12 +193,12 @@ const Home = () => {
                         </div>   
                     </div>
 
-                    <div className="home3-info__container">
+                    <div className="home3-info__container" data-aos="fade-in">
                         <p className="home3-typography">
                             Located and operated in San Diego, Maya Electric is happily serving every residential property wanting to upgrade or update. We offer our services to exisiting smart home owners, as well as those who are trying to convert their new & current properties to a smart home. We thrive to offer the best services, at competitive prices, making sure you and your property are 100% satisfied.
                             <br/>
                             <br/>
-                            With a team of experts, you'll always be confident that your home is in good hands. From smart lighting to panelized systems, we have got you covered. Contact us today and transform your home's lighting today! 
+                            Have any questions or ready for a quote? Call us today at <a href="tel:+18582151331" className="phone-number">+1(858) 215-1331 </a>or fill out the form located on the contace page. We'll try our best to give you the answers you need in a time orderly manner. Let's turn your home smart today! 
                         </p>
                         <Link to="/contact" className="home3-link">
                             <button className="home3-button">
@@ -215,8 +214,7 @@ const Home = () => {
                     <div className="end-head__wrapper">
                         <img className="end-logo" alt='Maya Electric Logo' src={Transparentlogo} /> 
                         <h3 className="end-header">
-                                Smart Home Lighting, <br/>
-                                Made Easy & Affordable
+                                Enhance Your Home Lighting Today
                         </h3>
                     </div>
                     <div className="end-info__container">
@@ -242,21 +240,22 @@ const Home = () => {
                                 <House sx={{fontSize: '35px', borderRadius: '5px', backgroundColor: 'rgba(33, 83, 204, .8)', padding: '15px'}}/>
                             </div>
                         </div>
+                        
                         <p className="end-typography">
-                            Maya Electric is ready to take your home, rental property, or apartment to the next level with smart home technologies and innovative devices. With state of the art products, reasonable prices, and experience, we will guarentee a fast and worry free installation to make sure you and your home are taken care of. 
+                            Maya Electric is ready to take your home, rental property, or apartment to the next level with smart home technologies and devices. With state of the art products, reasonable prices, and experience, we will guarentee a fast and worry free installation to make sure you and your home are taken care of. 
                             <br/>
                             <br/>
                             Don't hesitate to give us a call or send as a message to schedule a quote today. Take the first step to take control of your home's energy consumption, customizablity, and cost, The <i>Maya Electric</i> way.
                         </p>
                     </div>
-                    <div className="end-buttons__container">
+                    <div className="end-buttons__container" data-aos="fade-in">
                         <Link to='/contact' className="end-link">
                             <button className="end-schedule__button">
                                 Message Today
                             </button>
                         </Link>
                         <button className="end-phone__button">
-                            <a href="tel:8583868083">Call Today</a>
+                            <a href="tel:+18582151331">Call Today</a>
                         </button>
                     </div>             
                 </div>

@@ -28,6 +28,10 @@ const NavBar = () => {
     console.log('triggered');
   };
 
+  const handleItemClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <nav className={isScrolled ? 'navbar scrolled' : 'navbar'}>
@@ -43,6 +47,7 @@ const NavBar = () => {
             <NavLink 
               to="/" 
               className="nav-item" 
+              onClick={handleItemClick}
               style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
                 fontSize: isActive ? '1.2em' : '1em',
@@ -53,34 +58,46 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services" className="nav-item" style={({ isActive }) => ({
+            <NavLink to="/services" 
+              className="nav-item" 
+              onClick={handleItemClick} 
+              style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
                 fontSize: isActive ? '1.2em' : '1em',
                 outline: 'none'
               })}>
-              Services
+                Services
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="nav-item" style={({ isActive }) => ({
+            <NavLink to="/about" 
+              className="nav-item" 
+              onClick={handleItemClick} 
+              style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
                 fontSize: isActive ? '1.2em' : '1em',
                 outline: 'none'
               })}>
-              About Us
+                About Us
             </NavLink>
           </li>
           <li>
-            <NavLink to="/faqs" className="nav-item" style={({ isActive }) => ({
+            <NavLink to="/faqs" 
+              className="nav-item" 
+              onClick={handleItemClick} 
+              style={({ isActive }) => ({
                 color: isActive ? '#2153CC' : '#FFFFFF',
                 fontSize: isActive ? '1.2em' : '1em',
                 outline: 'none'
               })}>
-              FAQS
+                FAQS
             </NavLink>
           </li>
 
-          <NavLink to="/contact" className="contact-nav__item">
+          <NavLink to="/contact" 
+            className="contact-nav__item" 
+            onClick={handleItemClick}
+          >
             <button className='contact-nav'>
               Contact Us
             </button>

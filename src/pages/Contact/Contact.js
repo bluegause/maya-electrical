@@ -1,10 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { Card, CardContent, Grid, TextField, Button } from '@mui/material';
 import { exteriorBackground, logoFullTransparent } from "../../assets/AssetsIndex";
+import Aos from "aos";
 import './contact.css';
-import { Email, Phone } from "../PageIndex";
 
 const Contact = () => {
+
+    useEffect(() => {
+        Aos.init(1500)
+    }, []);
 
     useEffect(() => {
         window.scroll(0,0)
@@ -18,7 +22,7 @@ const Contact = () => {
 
     return (
         <>
-            <div className="contact-page">
+            <div className="contact-page" data-aos="fade-in" data-aos-duration="10000">
                 <section className="contact-header__container" style={{backgroundImage: `url(${exteriorBackground})`}}>
                     <div className="contact-header__tint">
                         <h2 className="contact-header">

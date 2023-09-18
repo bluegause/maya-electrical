@@ -5,9 +5,9 @@ import Services from "./pages/Services/Services";
 import About from "./pages/About/About";
 import Faqs from "./pages/Faqs/Faqs";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
