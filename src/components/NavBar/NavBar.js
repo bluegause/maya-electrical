@@ -36,7 +36,7 @@ const NavBar = () => {
     <>
       <nav className={isScrolled ? 'navbar scrolled' : 'navbar'}>
         <div className="logo-container">
-          <img src={logo} alt="Maya Electrical logo" width={'45px'} height={'45px'} />
+          <img src={logo} alt="Maya Electric logo" width={'45px'} height={'45px'} />
           <h3 className="logo-text">MAYA ELECTRIC</h3>
         </div>
         <div className="hamburger" onClick={toggleMenu}>

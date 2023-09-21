@@ -442,6 +442,7 @@ html {
 
             .description {
                 color: #FFFFFF;
+                text-align: center;
                 font-size: 1.1em;
                 font-weight: 300;
                 line-height: 1.8em;
@@ -497,14 +498,14 @@ html {
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
             display: flex;
             flex-direction: column;
-            height: 80px;
+            height: 85px;
             justify-content: flex-start;
             margin-bottom: .5em;
             padding-top: 1em;
             position: relative;
             text-align: center;
             transition: all 0.3s ease;
-            width: 31%;
+            width: 32%;
         }
 
         .home3-card:last-child {
@@ -513,7 +514,7 @@ html {
 
         .home3-card:hover {
             box-shadow: 0 5px 20px rgba(64, 111, 224, .9);
-            height: 92px;
+            height: 100px;
             transition: all .3s ease;
         }
 
@@ -682,13 +683,13 @@ html {
 /* Body */
 
         .end-info__container {
-            -webkit-backdrop-filter: blur( 0px );
+            /* -webkit-backdrop-filter: blur( 0px );
             backdrop-filter: blur( 0px );
             background: rgba( 255, 255, 255, 0.33 );
             border: 1px solid rgba( 255, 255, 255, 0.18 );
             border-radius: 10px;
             border-radius: 10px;
-            box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.2 );
+            box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.2 ); */
             margin: 1.5em auto 0 auto;
             padding: .5em;
             width: 70%;
@@ -828,7 +829,11 @@ html {
 
 /* MEDIA QUERIES */
 
-/* 1st Media Query */
+@media screen and (max-width: 1156px) {
+    .home3-card:hover {
+        height: 120px;
+    }
+}
 
 @media screen and (max-width: 1048px) {
 
@@ -958,6 +963,10 @@ html {
 
         .home3-card {
             width: 100%;
+        }
+
+        .home3-card:hover {
+            height: 95px;
         }
 
         .home3-card__header {

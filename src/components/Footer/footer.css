@@ -49,8 +49,6 @@ footer {
             line-height: 1.5em;
         }
 
-/* Mid-Left Section */
-
     .footer-mid__left {
         width: 25%;
         display: flex;
@@ -78,8 +76,6 @@ footer {
             text-align: center;
             line-height: 1.6em;
         }
-
-/* Mid-Right Section */
 
     .mid-right {
         width: 25%;
@@ -114,8 +110,6 @@ footer {
             .general-link:hover {
                 color: #2153CC;
             }
-
-/* Right Section */
 
     .footer-right {
         width: 25%;
@@ -170,8 +164,6 @@ footer {
         padding-bottom: .5em;
     }
 
-
-/* MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {
 
