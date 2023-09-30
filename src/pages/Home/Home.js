@@ -48,9 +48,6 @@ const Home = () => {
                         </p>
                         <div className="hero-button__container">
                             <Link to="/contact" className="contact-hero__contact">
-                                {/* <button className="contact-hero__contact">
-                                    Schedule Today
-                                </button> */}
                                 Schedule Today
                             </Link>
                             <Link to="/services" className="contact-hero__offer">

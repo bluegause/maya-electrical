@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Card, CardContent, Grid, TextField, Button } from '@mui/material';
 import { exteriorBackground, logoFullTransparent } from "../../assets/AssetsIndex";
 import Aos from "aos";
+import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
@@ -18,6 +19,15 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        emailjs.sendForm('service_8p3w1w8', 'template_imeg0ea', form.current, '0OsDk-emO3rSQOFI4')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset();
     }
 
     return (
@@ -28,9 +38,6 @@ const Contact = () => {
                         <h2 className="contact-header">
                             Contact Us
                         </h2>
-                        {/* <p className="contact-header__typography">
-                            Whether if it's finding an answer, or scheduling an appointment, give us a call or send a message. Take the next step in the smart direction today. From new to exisiting homes, personal to rental properties, Maya Electric is commited to turning your home smarter, safer and more efficient. 
-                        </p> */}
                     </div>
                 </section>
                 <div className="contact-container">
@@ -42,20 +49,6 @@ const Contact = () => {
 
                                 Send us a message including the address, type of installation that is wanted, as well as your contact information that will be best to reach you at.
                             </p>
-                            {/* <div className="contact-icons__container">
-                                <div className="contact-icon__wrapper">                           
-                                    <Phone style={{fontSize: '30px', background: '#FFFFFF', color: '#2153CC', padding: '5px', borderRadius: '5px'}} />
-                                    <a href="tel:8583868083" className="contact-phone">
-                                        +1(858)386-8083
-                                    </a>
-                                </div>
-                                <div className="contact-icon__wrapper2">
-                                    <Email style={{fontSize: '30px', background: '#FFFFFF', color: '#2153CC', padding: '5px', borderRadius: '5px'}} />
-                                    <a href="email:alberto@mayaelectrical.com" className="contact-email">
-                                        Alberto@mayaelectrical.com
-                                    </a>
-                                </div>
-                            </div> */}
                         </div>
                     </section>
                     <section className="form-container">
@@ -73,10 +66,10 @@ const Contact = () => {
                                             <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Name" placeholder='Enter first and last name' name='name' variant='outlined' fullWidth required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Address" placeholder='Enter your address' name='address' variant='outlined' fullWidth required/>
+                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Type of Service" placeholder='Enter which service' name='service' variant='outlined' fullWidth required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Service" placeholder='Enter which service' name='service' variant='outlined' fullWidth required/>
+                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Address" placeholder='Enter your address' name='address' variant='outlined' fullWidth required/>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} type="email" label="Email" placeholder='Enter email' name='email' variant='outlined' fullWidth required/>

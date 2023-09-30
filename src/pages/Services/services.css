@@ -65,11 +65,8 @@
 
 /* First Section */
     .services1-section {
-        background: linear-gradient( #2153CC, #406FE0, #517CE3);
         background-color: #DEDEDE;
         width: 100%;
-
-        /*  */
     }
 
         .services1-container {

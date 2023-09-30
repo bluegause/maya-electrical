@@ -53,7 +53,7 @@ const WhyUs = () => {
                     expandIcon={<ExpandMore />}
                     aria-controls="reason1-content"
                 >
-                    <img src={Transparentlogo} style={{width: '50px'}}/>
+                    <img src={Transparentlogo} style={{width: '50px'}} alt='maya electric logo'/>
                     <Typography>
                         Competitive Pricing
                     </Typography>
@@ -69,7 +69,7 @@ const WhyUs = () => {
                     expandIcon={<ExpandMore />}
                     aria-controls="reason1-content"
                 >
-                    <img src={Transparentlogo} style={{width: '50px'}}/>
+                    <img src={Transparentlogo} style={{width: '50px'}} alt='maya electric logo'/>
                     <Typography>
                         Competitive Pricing
                     </Typography>
@@ -85,7 +85,7 @@ const WhyUs = () => {
                     expandIcon={<ExpandMore />}
                     aria-controls="reason1-content"
                 >
-                    <img src={Transparentlogo} style={{width: '50px'}}/>
+                    <img src={Transparentlogo} style={{width: '50px'}} alt='maya electric logo'/>
                     <Typography>
                         Competitive Pricing
                     </Typography>
