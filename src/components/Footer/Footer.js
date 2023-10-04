@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Transparentlogo } from '../../assets/AssetsIndex';
 import './footer.css';
-import { Face, Facebook, Google, Instagram } from '@mui/icons-material';
+import { Facebook, Google, Instagram } from '@mui/icons-material';
 
 const Footer = () => {
     return (
