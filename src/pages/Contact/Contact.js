@@ -1,11 +1,32 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Card, CardContent, Grid, TextField, Button } from '@mui/material';
+import { inputLabelClasses } from "@mui/material/InputLabel";
 import { exteriorBackground, logoFullTransparent } from "../../assets/AssetsIndex";
 import Aos from "aos";
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
+
+    const [formValues, setFormValues] = useState({
+        name: '',
+        service: '',
+        address: '',
+        email: '',
+        number: '',
+        message: ''
+    });
+
+    const isFormValid = () => {
+        return Object.values(formValues).every(value => value.trim() !== '') && formValues.number.length === 10
+    };
+
+    const handleInputChange =(fieldName) => (event) => {
+        setFormValues({
+            ...formValues,
+            [fieldName]: event.target.value,
+        });
+    };
 
     useEffect(() => {
         Aos.init(1500)
@@ -63,25 +84,134 @@ const Contact = () => {
                                             Please fill out all text fields below, including the type of installation youre interested in, or any special requests, and we'll get back to you as soon as possible!
                                         </p>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Name" placeholder='Enter first and last name' name='name' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            value={formValues.name} 
+                                            onChange={handleInputChange('name')} 
+                                            label="Name" 
+                                            placeholder='Enter first and last name' 
+                                            name='name' 
+                                            variant='outlined' 
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}  
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Type of Service" placeholder='Enter which service' name='service' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            value={formValues.service} 
+                                            onChange={handleInputChange('service')} 
+                                            label="Type of Service" 
+                                            placeholder='Enter which service interested in' 
+                                            name='service' 
+                                            variant='outlined'
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}  
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Address" placeholder='Enter your address' name='address' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            value={formValues.address} 
+                                            onChange={handleInputChange('address')} 
+                                            label="Address" 
+                                            placeholder='Enter your address' 
+                                            name='address' 
+                                            variant='outlined'
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}   
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} type="email" label="Email" placeholder='Enter email' name='email' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            value={formValues.email} 
+                                            onChange={handleInputChange('email')} 
+                                            type="email" 
+                                            label="Email" 
+                                            placeholder='Enter email' 
+                                            name='email' 
+                                            variant='outlined'
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}   
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} type="number" label="Phone" placeholder='Enter phone number' name='phone' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            onChange={handleInputChange('number')} 
+                                            type="tel" 
+                                            value={formValues.number}
+                                            label="Phone" 
+                                            placeholder='Enter phone number' 
+                                            name='phone' 
+                                            variant='outlined' 
+                                            inputProps={{minLength: 10, maxLength: 10, pattern: '[0-9]'}}
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}  
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <TextField style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} label="Message" multiline rows={4} placeholder='Type message here' name='message' variant='outlined' fullWidth required/>
+                                            <TextField 
+                                            style={{backgroundColor: "#FFFFFF", borderRadius: "5px"}} 
+                                            value={formValues.message} onChange={handleInputChange('message')} 
+                                            label="Message" 
+                                            multiline rows={4} 
+                                            placeholder='Type message here' 
+                                            name='message' 
+                                            variant='outlined'
+                                            InputLabelProps={{sx: {
+                                                color: "primary",
+                                                [`&.${inputLabelClasses.shrink}`]: {
+                                                    color: "#414141",
+                                                    backgroundColor: "transparent"
+                                                }
+                                            }}}   
+                                            fullWidth 
+                                            required/>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Button className='submit__button' type='submit' variant='contained' fullWidth style={{backgroundColor: "#414141"}}>Submit</Button>
+                                            <Button 
+                                                className='submit__button' 
+                                                type='submit' variant='contained' 
+                                                fullWidth 
+                                                disabled={!isFormValid()}
+                                                sx={{
+                                                    backgroundColor: '#7997E0'
+                                                }}
+                                                >
+                                                Submit
+                                            </Button>
                                         </Grid>
                                     </Grid>
                                 </form>

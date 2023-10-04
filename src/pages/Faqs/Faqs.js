@@ -42,7 +42,7 @@ const Faqs = () => {
                             <FaqsComponent2 />
                         </div>
                     </div>
-                    <p className="faqs-subheading" data-aos="fade-in">
+                    <p className="faqs-subheading">
                         If you are still unsure, or have any concerns/questions that you'd like to ask or get insight on, don't hesitate to contact us, or refer to the FAQs here.
                         
                         Our goal is to make sure you are confident and fully aware of what transforming your home into a smart home can offer in return! We will try our best to answer each and every question you have, in an explanatory and informative way so you can understand to the fullest degree.

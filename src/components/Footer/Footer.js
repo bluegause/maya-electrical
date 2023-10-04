@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Transparentlogo } from '../../assets/AssetsIndex';
 import './footer.css';
-import { Facebook, Google, Instagram } from '@mui/icons-material';
+import { Face, Facebook, Google, Instagram } from '@mui/icons-material';
 
 const Footer = () => {
     return (
@@ -16,7 +16,7 @@ const Footer = () => {
                         </h2>
                     </div>
                     <p className='footer-description'>
-                        Specializing in smart home installations that elevate your home experience, all at an affordable and time efficent manner. <br/>
+                        Specializing in smart home installations that elevate your home experience, all at an affordable and time efficent manner.
                         Elevate your home<br/>  - The Maya Electric way.
                     </p>
                 </div>
@@ -50,21 +50,21 @@ const Footer = () => {
                     </h2>
                     <div className='footer-icons__wrapper'>
                         <div className='footer-icon'>
-                            <Instagram />
+                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer'>
+                                <Instagram/>
+                            </a>
                         </div>
                         <div className='footer-icon'>
-                            <Facebook />
+                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer'>
+                                <Facebook/>
+                            </a>
                         </div>
                         <div className='footer-icon'>
                             <Google />
                         </div>
                     </div>
                     <p className='footer-right__description'>
-                        Give us a follow on the following social media platforms<br/>
-                        @MayaElectric
-                    </p>
-                    <p className='footer-right__username'>
-                        @MayaElectric
+                        Check us out on the following social media platforms for recent work & updates!
                     </p>
                 </div>
                 <div className='footer-mobile'>
@@ -76,10 +76,14 @@ const Footer = () => {
                     </div>
                     <div className='footer-icons__wrapper2'>
                         <div className='footer-icon'>
-                            <Instagram style={{fontSize: '35px'}}/>
+                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer'>
+                                <Instagram style={{fontSize: '35px'}}/>
+                            </a>
                         </div>
                         <div className='footer-icon'>
-                            <Facebook style={{fontSize: '35px'}}/>
+                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer'>
+                                <Facebook style={{fontSize: '35px'}}/>
+                            </a>
                         </div>
                         <div className='footer-icon'>
                             <Google style={{fontSize: '35px'}}/>

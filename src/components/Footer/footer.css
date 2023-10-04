@@ -135,10 +135,16 @@ footer {
             margin-top: 10px;
         }
 
-        .footer-icon:hover {
+        .footer-icon > a {
+            color: #D3D3D3;
+            outline: none;
+        }
+
+        .footer-icon > a:hover {
             color: #2153CC;
             cursor: pointer;
         }
+
 
         .footer-right__description {
             text-align: center;
