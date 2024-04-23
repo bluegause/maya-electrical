@@ -1053,18 +1053,26 @@ html {
 /* media query */
 
 @media screen and (max-width: 550px) {
+
+    .hero-tint {
+        height: 80svh;
+    }
+
     .hero-container {
         width: 100%;
     }
 
         .hero-header {
-            font-size: 5em;
+            font-size: 3.5em;
             margin: 0 auto;
             width: 95%;
+            text-align: center;
+            letter-spacing: 1.4px;
         }
 
-        .hero-subheading2 {
-            font-size: 1.1em;
+        .hero-subheading {
+            font-size: 1rem;
+            text-align: center;
             margin: 0 auto;
             padding: 1em 0 .75em 0;
             width: 95%;
