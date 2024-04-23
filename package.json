@@ -26,7 +26,7 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "depcheck": "depcheck",
-    "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css"
+    "postbuild": "purgecss --css 'build/static/css/*.css' --content 'build/static/index.html' 'build/static/js/*.js' --out 'build/static/css' --verbose"
   },
   "eslintConfig": {
     "extends": [
