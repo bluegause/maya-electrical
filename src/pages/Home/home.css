@@ -1054,9 +1054,6 @@ html {
 
 @media screen and (max-width: 550px) {
 
-    .hero-tint {
-        height: 80svh;
-    }
 
     .hero-container {
         width: 100%;

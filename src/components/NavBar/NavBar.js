@@ -35,10 +35,12 @@ const NavBar = () => {
   return (
     <>
       <nav className={isScrolled ? 'navbar scrolled' : 'navbar'}>
-        <div className="logo-container">
-          <img src={logo} alt="Maya Electric logo" width={'45px'} height={'45px'} />
-          <h3 className="logo-text">MAYA ELECTRIC</h3>
-        </div>
+        <NavLink end to='/' style={{textDecoration: 'none', outline: 'none'}}>
+          <div className="logo-container">
+            <img src={logo} alt="Maya Electric logo" width={'45px'} height={'45px'} />
+            <h3 className="logo-text">MAYA ELECTRIC</h3>
+          </div>
+          </NavLink>
         <div className="hamburger" onClick={toggleMenu}>
           <Hamburger direction="left" toggled={isMenuOpen} toggle={setIsMenuOpen} />
         </div>

@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     background-color: rgba(0, 0, 0, .9);
+    padding-bottom: 55px;
     
 }
 
@@ -205,6 +206,10 @@ footer {
 }
 
 @media screen and (max-width: 430px) {
+
+    .footer {
+        padding-bottom: 45px;
+    }
     
     footer {
         padding: 2em 0 1em 0;

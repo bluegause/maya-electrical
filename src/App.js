@@ -6,6 +6,7 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 import "./App.css";
+import NumberFooter from './components/numberFooter/NumberFooter';
 
 const Faqs = React.lazy(() => import('./pages/Faqs/Faqs'));
 const About = React.lazy(() => import('./pages/About/About'));
@@ -36,6 +37,7 @@ function App() {
           }
         />
       </Routes>
+      <NumberFooter />
       <Footer />
     </div>
   );

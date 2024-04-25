@@ -173,9 +173,6 @@ const Services = () => {
                                     Send a Message
                                 </button>
                             </Link>
-                            <a href='+18582151331' className='service-button'> 
-                                Call Us
-                            </a>
                         </div>
                     </div>
                     </div>

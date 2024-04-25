@@ -99,7 +99,7 @@ const Footer = () => {
                 
             </footer>
             <p className='copy-right'>
-                ©Maya Electric 2023
+                ©Maya Electric 2023 | CA LIC# C10-1119134
             </p>
         </div>
     )

@@ -65,6 +65,7 @@
                 height: auto;
                 margin-bottom: 2em;
                 max-width: 100%;
+                gap: 1;
             }
                 .contact-lower__wrapper {
                     align-items: center;
@@ -85,61 +86,6 @@
                         width: 90%;
                     }
 
-                    .contact-icons__container {
-                        align-items: center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        margin: 1em 0;
-                        width: 100%;
-                    }
-
-                        .contact-icon__wrapper {
-                            align-items: center;
-                            border-radius: 5px;
-                            display: flex;
-                            justify-content: center;
-                            padding: 5px 10px;
-                            width: 100%;
-                        }
-
-                            .contact-phone {
-                                color: #FFFFFF;
-                                font-size: 1.2em;
-                                font-weight: 500;
-                                margin-left: 2px;
-                                max-width: 100%;
-                                text-decoration: none;
-                                transition: all ease .3s;
-                            }
-
-                            .contact-phone:hover {
-                                color: #414141;
-                                transition: all ease .3s;
-                            }
-
-                        .contact-icon__wrapper2 {
-                            align-items: center;
-                            border-radius: 5px;
-                            display: flex;
-                            justify-content: center;
-                            padding: 5px 10px;
-                            width: 100%;
-                        }
-
-                            .contact-email {
-                                color: #FFFFFF;
-                                font-size: 1.2em;
-                                font-weight: 500;
-                                padding-left: 5px;
-                                text-decoration: none;
-                                transition: all ease .3s;
-                            }
-
-                            .contact-email:hover {
-                                color: #414141;
-                                transition: all ease .3s;
-                            }
 
         /* Form */
 
@@ -187,8 +133,13 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding-top: 1em;
+        padding-top: 1.5em;
     }
+
+        .header-logo {
+            max-width: 95%;
+            margin: 0 auto;
+        }
 
         .contact-info__section {
             width: 100%;

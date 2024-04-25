@@ -12,7 +12,7 @@ import faqsBg from './faqsBg.jpg';
 import Questions from './question.png';
 import basicImage from './basic-image.jpg';
 import fullLogo from './logo-full.jpeg';
-import logoFullTransparent from './logo-full-transparent.png';
+import logoFullTransparent from './full-logo-transparent.png';
 
 export {
     heroBg,

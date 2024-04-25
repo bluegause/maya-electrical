@@ -15,7 +15,12 @@
     display: flex;
     align-items: center;
     justify-content: baseline;
-    margin-left: 1em;
+    margin-left: 2rem;
+    flex-direction: row;
+}
+
+.logo-container > a {
+    width: 100%;
 }
 
 .navbar .logo-container .logo-text {
