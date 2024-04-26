@@ -33,9 +33,9 @@ const Home = () => {
 
     return (
         <>
-            <div className="home-hero" style={{backgroundImage: `url(${heroBg})`, backgroundPosition: 'center center', backgroundSize: 'cover', backgroundRepeat:'no-repeat'}}>
-                <div className="hero-tint" data-aos-duration="10000" data-aos = "fade-in">
-                    <div className="hero-container">
+            <div className="home-hero" style={{backgroundImage: `url(${heroBg})`, backgroundPosition: 'center center', backgroundRepeat:'no-repeat'}}>
+                <div className="hero-tint">
+                    <div className="hero-container" data-aos = "fade-in" data-duration-aos="3000">
                         <h1 className="hero-header">
                             Elevate <br/>
                             Your <br/>

@@ -4,6 +4,10 @@ html {
 
 .home-hero {
     width: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     z-index: 0;
 }
 
@@ -34,6 +38,7 @@ html {
             margin-top: .5em;
             text-align: left;
             z-index: 1;
+            font-family: 'Poppins', sans-serif;
         }
 
         .hero-subheading {
@@ -45,6 +50,7 @@ html {
             text-align: left;
             width: 70%;
             z-index: 1;
+            font-family: 'Poppins', sans-serif;
         }
 
         .italic-text {
