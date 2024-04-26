@@ -50,12 +50,12 @@ const Footer = () => {
                     </h2>
                     <div className='footer-icons__wrapper'>
                         <div className='footer-icon'>
-                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer' alt='Maya Electric Instagram'>
                                 <Instagram/>
                             </a>
                         </div>
                         <div className='footer-icon'>
-                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer' alt='Maya Electric Facebook'>
                                 <Facebook/>
                             </a>
                         </div>
@@ -76,12 +76,12 @@ const Footer = () => {
                     </div>
                     <div className='footer-icons__wrapper2'>
                         <div className='footer-icon'>
-                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.instagram.com/maya.electric.sd/' target='_blank' rel='noopener noreferrer' alt='Maya Electric Instagram Account'>
                                 <Instagram style={{fontSize: '35px'}}/>
                             </a>
                         </div>
                         <div className='footer-icon'>
-                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://www.facebook.com/profile.php?id=61552025759967' target='_blank' rel='noopener noreferrer' alt='Maya Electric Facebook Account'>
                                 <Facebook style={{fontSize: '35px'}}/>
                             </a>
                         </div>

@@ -27,7 +27,7 @@ const Services = () => {
                             made easy.
                         </h2>
                         <p className='services-subheading'>
-                            At Maya Electric, we transform your average home into a smart home. Specializing in smart home lighting installations, we fully embrace the benefits of smart home technology and offer them to you. <span>Whether you are wanting smart light switches installed, or you plan on installing a panelized system, Maya Electric has the expertise to elevate your home lighting experience.</span>
+                            At Maya Electric, we transform your average home into a smart home. Specializing in smart home lighting installations, we fully embrace the benefits of smart home technology and offer them to you. <span>Whether you are wanting smart light switches installed, or you plan on installing a panelized system, Maya Electric has the expertise and licensing to elevate your home lighting experience with confidence.</span>
                         </p>
                         <Link to='/contact' className='services-contact__link'>
                             <button className='services-header__button'>

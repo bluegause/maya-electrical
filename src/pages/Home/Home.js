@@ -173,7 +173,7 @@ const Home = () => {
                                 </h5>   
                             </div>
                             <p className="home3-card__description">
-                                With experience and knowledge we'll make sure we offer your home what's best fitting.
+                                With experience and proper licensing, we'll make sure we offer your home what's best fitting.
                             </p> 
                         </div>
 
@@ -192,7 +192,7 @@ const Home = () => {
 
                     <div className="home3-info__container" data-aos="fade-in">
                         <p className="home3-typography">
-                            Located and operated in San Diego, Maya Electric is happily serving every residential property wanting to upgrade or update. We offer our services to exisiting smart home owners, as well as those who are trying to convert their new & current properties to a smart home. We thrive to offer the best services, at competitive prices, making sure you and your property are 100% satisfied.
+                            Located and operated in San Diego, Maya Electric is happily serving every residential property wanting to upgrade or update. We offer our services to exisiting smart home owners, as well as those who are trying to convert their new & current properties to a smart home. We thrive to offer the best services at competitive prices, making sure you and your property are 100% satisfied.
                             <br/>
                             <br/>
                             Have any questions or ready for a quote? Call us today at <a href="tel:+18582151331" className="phone-number">+1(858) 215-1331 </a>or fill out the form located on the contace page. We'll try our best to give you the answers you need in a time orderly manner. Let's turn your home smart today! 
@@ -239,7 +239,7 @@ const Home = () => {
                         </div>
                         
                         <p className="end-typography">
-                            Maya Electric is ready to take your home, rental property, or apartment to the next level with smart home technologies and devices. With state of the art products, reasonable prices, and experience, we will guarentee a fast and worry free installation to make sure you and your home are taken care of. 
+                            Maya Electric is licensed, insured, and ready to take your home, rental property, or apartment to the next level with smart home technologies and devices. With state of the art products, reasonable prices, and experience, we will guarentee a fast and worry free installation to make sure you and your home are taken care of. 
                             <br/>
                             <br/>
                             Don't hesitate to give us a call or send as a message to schedule a quote today. Take the first step to take control of your home's energy consumption, customizablity, and cost, The <i>Maya Electric</i> way.
